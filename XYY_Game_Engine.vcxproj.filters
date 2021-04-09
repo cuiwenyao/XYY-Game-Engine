@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Component">
+      <UniqueIdentifier>{673f947f-b4af-4be5-a88a-0089c5cb0339}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Element">
+      <UniqueIdentifier>{b979adae-7a15-4d37-9513-518246997097}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drive">
+      <UniqueIdentifier>{83089a30-9caf-44de-9d54-27d1d5626ce8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Variable">
+      <UniqueIdentifier>{77c65eb8-a18d-4782-b18c-1637831f75d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sync">
+      <UniqueIdentifier>{4e5b6526-1073-48af-ad67-9491b55ab00f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GLSL">
+      <UniqueIdentifier>{37d1f8d4-5cc3-4716-a371-10d9de77e8f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResManager">
+      <UniqueIdentifier>{c5aa9934-3517-46bf-b987-11fed14d24f3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Code\Component\Scene.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Component\Window.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Element\Camera.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Element\Element.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Element\mesh.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Element\Model.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Element\Object.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Element\Shader.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Sync\GlobalSync.h">
+      <Filter>Sync</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Variable\GlobalVariable.h">
+      <Filter>Variable</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Drive\PhysicalDrive.h">
+      <Filter>Drive</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Drive\AnimationDrive.h">
+      <Filter>Drive</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Drive\LogicDrive.h">
+      <Filter>Drive</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Drive\IODrive.h">
+      <Filter>Drive</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Drive\VoiceDrive.h">
+      <Filter>Drive</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Drive\RendDrive.h">
+      <Filter>Drive</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\XYY.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Element\SkyBox.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\ResManager\ResManager.h">
+      <Filter>ResManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Element\Cube.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Drive\LightDrive.h">
+      <Filter>Drive</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Element\DirLight.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Element\PointLight.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Element\SpotLight.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Element\Light.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Code\Component\Scene.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Component\Window.cpp">
+      <Filter>Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Drive\AnimationDrive.cpp">
+      <Filter>Drive</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Drive\IODrive.cpp">
+      <Filter>Drive</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Drive\LogicDrive.cpp">
+      <Filter>Drive</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Drive\PhysicalDrive.cpp">
+      <Filter>Drive</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Drive\VoiceDrive.cpp">
+      <Filter>Drive</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Element\Element.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Element\mesh.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Element\Model.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Element\Object.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Element\Shader.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Sync\GlobalSync.cpp">
+      <Filter>Sync</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Variable\GlobalVariable.cpp">
+      <Filter>Variable</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Drive\RendDrive.cpp">
+      <Filter>Drive</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Element\Camera.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\XYY.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\glad.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Element\SkyBox.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\ResManager\ResManager.cpp">
+      <Filter>ResManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Element\Cube.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Drive\LightDrive.cpp">
+      <Filter>Drive</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Element\DirLight.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Element\PointLight.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Element\SpotLight.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\Element\Light.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GLSL\light.frag">
+      <Filter>GLSL</Filter>
+    </None>
+    <None Include="GLSL\light.vert">
+      <Filter>GLSL</Filter>
+    </None>
+    <None Include="GLSL\object.frag">
+      <Filter>GLSL</Filter>
+    </None>
+    <None Include="GLSL\object.vert">
+      <Filter>GLSL</Filter>
+    </None>
+    <None Include="GLSL\shader.frag">
+      <Filter>GLSL</Filter>
+    </None>
+    <None Include="GLSL\shader.vert">
+      <Filter>GLSL</Filter>
+    </None>
+    <None Include="GLSL\skybox.frag">
+      <Filter>GLSL</Filter>
+    </None>
+    <None Include="GLSL\skybox.vert">
+      <Filter>GLSL</Filter>
+    </None>
+    <None Include="GLSL\cube.frag">
+      <Filter>GLSL</Filter>
+    </None>
+    <None Include="GLSL\cube.vert">
+      <Filter>GLSL</Filter>
+    </None>
+  </ItemGroup>
+</Project>
