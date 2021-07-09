@@ -1,6 +1,6 @@
 .git
 .vs
 Debug
-resources
+resources/objects/*
 Release
 x64
