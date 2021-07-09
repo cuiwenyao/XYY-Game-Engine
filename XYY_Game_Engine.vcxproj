@@ -19,60 +19,63 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Code\Component\Scene.h" />
-    <ClInclude Include="Code\Component\Window.h" />
-    <ClInclude Include="Code\Drive\AnimationDrive.h" />
-    <ClInclude Include="Code\Drive\IODrive.h" />
-    <ClInclude Include="Code\Drive\LightDrive.h" />
-    <ClInclude Include="Code\Drive\LogicDrive.h" />
-    <ClInclude Include="Code\Drive\PhysicalDrive.h" />
-    <ClInclude Include="Code\Drive\RendDrive.h" />
-    <ClInclude Include="Code\Drive\VoiceDrive.h" />
-    <ClInclude Include="Code\Element\Camera.h" />
-    <ClInclude Include="Code\Element\Cube.h" />
-    <ClInclude Include="Code\Element\DirLight.h" />
+    <ClInclude Include="Code\Drive\Driver.h" />
+    <ClInclude Include="Code\Drive\GlobalDriver\GlobalDriver.h" />
+    <ClInclude Include="Code\Drive\GlobalDriver\GlobalIODriver.h" />
+    <ClInclude Include="Code\Drive\GlobalDriver\GlobalLightRendDriver.h" />
+    <ClInclude Include="Code\Drive\GlobalDriver\GlobalLogicDriver.h" />
+    <ClInclude Include="Code\Drive\GlobalDriver\GlobalSyncDriver.h" />
+    <ClInclude Include="Code\Drive\LocalDriver\LocalDriver.h" />
+    <ClInclude Include="Code\Drive\LocalDriver\LocalLightDriver.h" />
+    <ClInclude Include="Code\Drive\LocalDriver\LocalRendDriver.h" />
+    <ClInclude Include="Code\Element\CameraElement.h" />
+    <ClInclude Include="Code\Element\CubeElement.h" />
     <ClInclude Include="Code\Element\Element.h" />
-    <ClInclude Include="Code\Element\Light.h" />
-    <ClInclude Include="Code\Element\mesh.h" />
-    <ClInclude Include="Code\Element\Model.h" />
-    <ClInclude Include="Code\Element\Object.h" />
-    <ClInclude Include="Code\Element\PointLight.h" />
-    <ClInclude Include="Code\Element\Shader.h" />
-    <ClInclude Include="Code\Element\SkyBox.h" />
-    <ClInclude Include="Code\Element\SpotLight.h" />
-    <ClInclude Include="Code\ResManager\ResManager.h" />
-    <ClInclude Include="Code\Sync\GlobalSync.h" />
-    <ClInclude Include="Code\Variable\GlobalVariable.h" />
-    <ClInclude Include="Code\XYY.h" />
+    <ClInclude Include="Code\Element\LightElement.h" />
+    <ClInclude Include="Code\Element\ObjectElement.h" />
+    <ClInclude Include="Code\Element\SkyboxElement.h" />
+    <ClInclude Include="Code\Resource\CubeResource.h" />
+    <ClInclude Include="Code\Resource\MeshResource.h" />
+    <ClInclude Include="Code\Resource\ModelResource.h" />
+    <ClInclude Include="Code\Resource\Resource.h" />
+    <ClInclude Include="Code\Resource\ShaderResource.h" />
+    <ClInclude Include="Code\Resource\SkyboxResource.h" />
+    <ClInclude Include="Code\Resource\TextureResource.h" />
+    <ClInclude Include="Code\Resource\Window.h" />
+    <ClInclude Include="Code\Scene\Scene.h" />
+    <ClInclude Include="Code\Scene\SceneContent.h" />
+    <ClInclude Include="Code\Tinyxml\tinystr.h" />
+    <ClInclude Include="Code\Tinyxml\tinyxml.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Code\Component\Scene.cpp" />
-    <ClCompile Include="Code\Component\Window.cpp" />
-    <ClCompile Include="Code\Drive\AnimationDrive.cpp" />
-    <ClCompile Include="Code\Drive\IODrive.cpp" />
-    <ClCompile Include="Code\Drive\LightDrive.cpp" />
-    <ClCompile Include="Code\Drive\LogicDrive.cpp" />
-    <ClCompile Include="Code\Drive\PhysicalDrive.cpp" />
-    <ClCompile Include="Code\Drive\RendDrive.cpp" />
-    <ClCompile Include="Code\Drive\VoiceDrive.cpp" />
-    <ClCompile Include="Code\Element\Camera.cpp" />
-    <ClCompile Include="Code\Element\Cube.cpp" />
-    <ClCompile Include="Code\Element\DirLight.cpp" />
+    <ClCompile Include="Code\Drive\GlobalDriver\GlobalIODriver.cpp" />
+    <ClCompile Include="Code\Drive\GlobalDriver\GlobalLightRendDriver.cpp" />
+    <ClCompile Include="Code\Drive\GlobalDriver\GlobalLogicDriver.cpp" />
+    <ClCompile Include="Code\Drive\GlobalDriver\GlobalSyncDriver.cpp" />
+    <ClCompile Include="Code\Drive\LocalDriver\LocalLightDriver.cpp" />
+    <ClCompile Include="Code\Drive\LocalDriver\LocalRendDriver.cpp" />
+    <ClCompile Include="Code\Element\CameraElement.cpp" />
+    <ClCompile Include="Code\Element\CubeElement.cpp" />
     <ClCompile Include="Code\Element\Element.cpp" />
-    <ClCompile Include="Code\Element\Light.cpp" />
-    <ClCompile Include="Code\Element\mesh.cpp" />
-    <ClCompile Include="Code\Element\Model.cpp" />
-    <ClCompile Include="Code\Element\Object.cpp" />
-    <ClCompile Include="Code\Element\PointLight.cpp" />
-    <ClCompile Include="Code\Element\Shader.cpp" />
-    <ClCompile Include="Code\Element\SkyBox.cpp" />
-    <ClCompile Include="Code\Element\SpotLight.cpp" />
+    <ClCompile Include="Code\Element\LightElement.cpp" />
+    <ClCompile Include="Code\Element\ObjectElement.cpp" />
+    <ClCompile Include="Code\Element\SkyboxElement.cpp" />
     <ClCompile Include="Code\glad.c" />
-    <ClCompile Include="Code\main.cpp" />
-    <ClCompile Include="Code\ResManager\ResManager.cpp" />
-    <ClCompile Include="Code\Sync\GlobalSync.cpp" />
-    <ClCompile Include="Code\Variable\GlobalVariable.cpp" />
-    <ClCompile Include="Code\XYY.cpp" />
+    <ClCompile Include="Code\Resource\CubeResource.cpp" />
+    <ClCompile Include="Code\Resource\SkyboxResource.cpp" />
+    <ClCompile Include="Code\Resource\MeshResource.cpp" />
+    <ClCompile Include="Code\Resource\ModelResource.cpp" />
+    <ClCompile Include="Code\Resource\Resource.cpp" />
+    <ClCompile Include="Code\Resource\ShaderResource.cpp" />
+    <ClCompile Include="Code\Resource\TextureResource.cpp" />
+    <ClCompile Include="Code\Resource\Window.cpp" />
+    <ClCompile Include="Code\Scene\Scene.cpp" />
+    <ClCompile Include="Code\Scene\SceneContent.cpp" />
+    <ClCompile Include="Code\Tinyxml\tinystr.cpp" />
+    <ClCompile Include="Code\Tinyxml\tinyxml.cpp" />
+    <ClCompile Include="Code\Tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="Code\Tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GLSL\cube.frag" />
@@ -86,37 +89,42 @@
     <None Include="GLSL\skybox.frag" />
     <None Include="GLSL\skybox.vert" />
   </ItemGroup>
+  <ItemGroup>
+    <Xml Include="scxml\ground.xml" />
+    <Xml Include="scxml\Helloworld.xml" />
+    <Xml Include="scxml\coordinate.xml" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{3f55c066-a3d9-4199-9646-11fe862ee51c}</ProjectGuid>
     <RootNamespace>XYYGameEngine</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -157,14 +165,16 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\github\XYY-Game-Engine\dependence\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>opengl32.lib;glfw3.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\github\XYY-Game-Engine\dependence\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -172,28 +182,33 @@
       <WarningLevel>Level3</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\github\XYY-Game-Engine\dependence\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>E:\github\XYY-Game-Engine\dependence\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\github\XYY-Game-Engine\dependence\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>opengl32.lib;glfw3.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\github\XYY-Game-Engine\dependence\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -201,18 +216,20 @@
       <WarningLevel>Level3</WarningLevel>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>E:\github\XYY-Game-Engine\dependence\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>E:\github\XYY-Game-Engine\dependence\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-  <ImportGroup Label="ExtensionTargets">
-  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
 </Project>

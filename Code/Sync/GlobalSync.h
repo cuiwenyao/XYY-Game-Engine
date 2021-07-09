@@ -1,3 +1,4 @@
+/* 
 //#pragma once
 #ifndef GLOBAL_H
 #define GLOBAL_H
@@ -12,6 +13,7 @@ public:
 	static float currentfps;//当前帧率
 	static float targetframetime;//目标帧时间
 	static float currentframetime;//当前帧时间
+
 	static float mouselastX;//鼠标横坐标
 	static float mouselastY;//鼠标纵坐标
 	static bool firstMouse;//鼠标是否是第一次
@@ -21,4 +23,6 @@ public:
 };
 
 #endif
+
+ */
 

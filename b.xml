@@ -1,0 +1,6 @@
+<root>
+    <Element1 attribute1="some value" />
+    <Element2 attribute2="2" attribute3="3">
+        <Element3 attribute4="4" />Some text.
+    </Element2>
+</root>

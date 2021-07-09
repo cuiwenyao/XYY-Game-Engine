@@ -1,3 +1,4 @@
+/* 
 #pragma once
 #include "GlobalSync.h"
 #include <glad/glad.h>
@@ -22,4 +23,4 @@ void GlobalSync::update()
 	lasttime = currenttime;
 	currentfps = 1.0 / deltatime;
 }
-
+ */
