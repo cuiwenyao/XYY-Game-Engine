@@ -19,87 +19,93 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Code\Drive\Driver.h" />
-    <ClInclude Include="Code\Drive\GlobalDriver\GlobalDriver.h" />
-    <ClInclude Include="Code\Drive\GlobalDriver\GlobalIODriver.h" />
-    <ClInclude Include="Code\Drive\GlobalDriver\GlobalLightRendDriver.h" />
-    <ClInclude Include="Code\Drive\GlobalDriver\GlobalLogicDriver.h" />
-    <ClInclude Include="Code\Drive\GlobalDriver\GlobalSyncDriver.h" />
-    <ClInclude Include="Code\Drive\LocalDriver\LocalDriver.h" />
-    <ClInclude Include="Code\Drive\LocalDriver\LocalLightDriver.h" />
-    <ClInclude Include="Code\Drive\LocalDriver\LocalRendDriver.h" />
-    <ClInclude Include="Code\Element\CameraElement.h" />
-    <ClInclude Include="Code\Element\CubeElement.h" />
-    <ClInclude Include="Code\Element\Element.h" />
-    <ClInclude Include="Code\Element\LightElement.h" />
-    <ClInclude Include="Code\Element\ObjectElement.h" />
-    <ClInclude Include="Code\Element\SkyboxElement.h" />
-    <ClInclude Include="Code\Resource\CubeResource.h" />
-    <ClInclude Include="Code\Resource\MeshResource.h" />
-    <ClInclude Include="Code\Resource\ModelResource.h" />
-    <ClInclude Include="Code\Resource\Resource.h" />
-    <ClInclude Include="Code\Resource\ShaderResource.h" />
-    <ClInclude Include="Code\Resource\SkyboxResource.h" />
-    <ClInclude Include="Code\Resource\TextureResource.h" />
-    <ClInclude Include="Code\Resource\Window.h" />
-    <ClInclude Include="Code\Scene\Scene.h" />
-    <ClInclude Include="Code\Scene\SceneContent.h" />
-    <ClInclude Include="Code\Tinyxml\tinystr.h" />
-    <ClInclude Include="Code\Tinyxml\tinyxml.h" />
+    <ClInclude Include="include\Drive\Driver.h" />
+    <ClInclude Include="include\Drive\GlobalDriver\GlobalDebugoutDriver.h" />
+    <ClInclude Include="include\Drive\GlobalDriver\GlobalDriver.h" />
+    <ClInclude Include="include\Drive\GlobalDriver\GlobalIODriver.h" />
+    <ClInclude Include="include\Drive\GlobalDriver\GlobalLightRendDriver.h" />
+    <ClInclude Include="include\Drive\GlobalDriver\GlobalLogicDriver.h" />
+    <ClInclude Include="include\Drive\GlobalDriver\GlobalSyncDriver.h" />
+    <ClInclude Include="include\Drive\GlobalDriver\LocalRendDriver.h" />
+    <ClInclude Include="include\Drive\LocalDriver.h" />
+    <ClInclude Include="include\Drive\LocalDriver\LocalDriver.h" />
+    <ClInclude Include="include\Drive\LocalDriver\LocalLightDriver.h" />
+    <ClInclude Include="include\Drive\LocalDriver\LocalRendDriver.h" />
+    <ClInclude Include="include\Element\CameraElement.h" />
+    <ClInclude Include="include\Element\CubeElement.h" />
+    <ClInclude Include="include\Element\Element.h" />
+    <ClInclude Include="include\Element\LightElement.h" />
+    <ClInclude Include="include\Element\ObjectElement.h" />
+    <ClInclude Include="include\Element\SkyboxElement.h" />
+    <ClInclude Include="include\Resource\CubeResource.h" />
+    <ClInclude Include="include\Resource\MeshResource.h" />
+    <ClInclude Include="include\Resource\ModelResource.h" />
+    <ClInclude Include="include\Resource\Resource.h" />
+    <ClInclude Include="include\Resource\ShaderResource.h" />
+    <ClInclude Include="include\Resource\SkyboxResource.h" />
+    <ClInclude Include="include\Resource\TextureResource.h" />
+    <ClInclude Include="include\Resource\Window.h" />
+    <ClInclude Include="include\Scene\Scene.h" />
+    <ClInclude Include="include\Scene\SceneContent.h" />
+    <ClInclude Include="include\Tinyxml\tinystr.h" />
+    <ClInclude Include="include\Tinyxml\tinyxml.h" />
+    <ClInclude Include="XYY_Game_Engine.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Code\Drive\GlobalDriver\GlobalIODriver.cpp" />
-    <ClCompile Include="Code\Drive\GlobalDriver\GlobalLightRendDriver.cpp" />
-    <ClCompile Include="Code\Drive\GlobalDriver\GlobalLogicDriver.cpp" />
-    <ClCompile Include="Code\Drive\GlobalDriver\GlobalSyncDriver.cpp" />
-    <ClCompile Include="Code\Drive\LocalDriver\LocalLightDriver.cpp" />
-    <ClCompile Include="Code\Drive\LocalDriver\LocalRendDriver.cpp" />
-    <ClCompile Include="Code\Element\CameraElement.cpp" />
-    <ClCompile Include="Code\Element\CubeElement.cpp" />
-    <ClCompile Include="Code\Element\Element.cpp" />
-    <ClCompile Include="Code\Element\LightElement.cpp" />
-    <ClCompile Include="Code\Element\ObjectElement.cpp" />
-    <ClCompile Include="Code\Element\SkyboxElement.cpp" />
-    <ClCompile Include="Code\glad.c" />
-    <ClCompile Include="Code\Resource\CubeResource.cpp" />
-    <ClCompile Include="Code\Resource\SkyboxResource.cpp" />
-    <ClCompile Include="Code\Resource\MeshResource.cpp" />
-    <ClCompile Include="Code\Resource\ModelResource.cpp" />
-    <ClCompile Include="Code\Resource\Resource.cpp" />
-    <ClCompile Include="Code\Resource\ShaderResource.cpp" />
-    <ClCompile Include="Code\Resource\TextureResource.cpp" />
-    <ClCompile Include="Code\Resource\Window.cpp" />
-    <ClCompile Include="Code\Scene\Scene.cpp" />
-    <ClCompile Include="Code\Scene\SceneContent.cpp" />
-    <ClCompile Include="Code\Tinyxml\tinystr.cpp" />
-    <ClCompile Include="Code\Tinyxml\tinyxml.cpp" />
-    <ClCompile Include="Code\Tinyxml\tinyxmlerror.cpp" />
-    <ClCompile Include="Code\Tinyxml\tinyxmlparser.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="dependence\include\glad.c" />
+    <ClCompile Include="include\Drive\GlobalDriver\GlobalDebugoutDriver.cpp" />
+    <ClCompile Include="include\Drive\GlobalDriver\GlobalIODriver.cpp" />
+    <ClCompile Include="include\Drive\GlobalDriver\GlobalLightRendDriver.cpp" />
+    <ClCompile Include="include\Drive\GlobalDriver\GlobalLogicDriver.cpp" />
+    <ClCompile Include="include\Drive\GlobalDriver\GlobalSyncDriver.cpp" />
+    <ClCompile Include="include\Drive\LocalDriver\LocalLightDriver.cpp" />
+    <ClCompile Include="include\Drive\LocalDriver\LocalRendDriver.cpp" />
+    <ClCompile Include="include\Element\CameraElement.cpp" />
+    <ClCompile Include="include\Element\CubeElement.cpp" />
+    <ClCompile Include="include\Element\Element.cpp" />
+    <ClCompile Include="include\Element\LightElement.cpp" />
+    <ClCompile Include="include\Element\ObjectElement.cpp" />
+    <ClCompile Include="include\Element\SkyboxElement.cpp" />
+    <ClCompile Include="include\Resource\CubeResource.cpp" />
+    <ClCompile Include="include\Resource\MeshResource.cpp" />
+    <ClCompile Include="include\Resource\ModelResource.cpp" />
+    <ClCompile Include="include\Resource\Resource.cpp" />
+    <ClCompile Include="include\Resource\ShaderResource.cpp" />
+    <ClCompile Include="include\Resource\SkyboxResource.cpp" />
+    <ClCompile Include="include\Resource\TextureResource.cpp" />
+    <ClCompile Include="include\Resource\Window.cpp" />
+    <ClCompile Include="include\Scene\Scene.cpp" />
+    <ClCompile Include="include\Scene\SceneContent.cpp" />
+    <ClCompile Include="include\Tinyxml\tinystr.cpp" />
+    <ClCompile Include="include\Tinyxml\tinyxml.cpp" />
+    <ClCompile Include="include\Tinyxml\tinyxmlerror.cpp" />
+    <ClCompile Include="include\Tinyxml\tinyxmlparser.cpp" />
+    <ClCompile Include="XYY_Game_Engine.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="GLSL\cube.frag" />
-    <None Include="GLSL\cube.vert" />
-    <None Include="GLSL\light.frag" />
-    <None Include="GLSL\light.vert" />
-    <None Include="GLSL\object.frag" />
-    <None Include="GLSL\object.vert" />
-    <None Include="GLSL\shader.frag" />
-    <None Include="GLSL\shader.vert" />
-    <None Include="GLSL\skybox.frag" />
-    <None Include="GLSL\skybox.vert" />
+    <None Include="include\GLSL\cube.frag" />
+    <None Include="include\GLSL\cube.vert" />
+    <None Include="include\GLSL\light.frag" />
+    <None Include="include\GLSL\light.vert" />
+    <None Include="include\GLSL\object.frag" />
+    <None Include="include\GLSL\object.vert" />
+    <None Include="include\GLSL\shader.frag" />
+    <None Include="include\GLSL\shader.vert" />
+    <None Include="include\GLSL\skybox.frag" />
+    <None Include="include\GLSL\skybox.vert" />
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="scxml\ground.xml" />
-    <Xml Include="scxml\Helloworld.xml" />
-    <Xml Include="scxml\coordinate.xml" />
+    <Xml Include="include\Scxmlexample\coordinate.xml" />
+    <Xml Include="include\Scxmlexample\ground.xml" />
+    <Xml Include="include\Scxmlexample\Helloworld.xml" />
+    <Xml Include="include\Scxmlexample\zzuele.xml" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{3f55c066-a3d9-4199-9646-11fe862ee51c}</ProjectGuid>
     <RootNamespace>XYYGameEngine</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -122,9 +128,9 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -161,6 +167,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\19700\Desktop\coding\XYY-Game-Engine\dependence\include;C:\Users\19700\Desktop\coding\XYY-Game-Engine\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\19700\Desktop\coding\XYY-Game-Engine\dependence\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

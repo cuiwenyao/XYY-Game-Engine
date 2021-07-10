@@ -1,0 +1,33 @@
+<scenecontent>
+  <objects>
+    
+
+    <cube colorr="1" colorg="1" colorb="1" scalex="100" scalez="100" scaley="0.1"  >
+      <texture path="resources/textures/metal.png" type="ambient" id="texid1" ></texture>
+    </cube>
+
+    <model path="resources/objects/spartan_armour_mkv_-_halo_reach/scene.gltf" id="model1" >  </model>
+    
+    <object name="themodel" modelid="model1" scalex="0.1" scaley="0.1" scalez="0.1" positionx="-40"></object>
+    <object name="themodel" modelid="model1" scalex="0.1" scaley="0.1" scalez="0.1" positionx="-30"></object>
+    <object name="themodel" modelid="model1" scalex="0.1" scaley="0.1" scalez="0.1" positionx="-20"></object>
+    <object name="themodel" modelid="model1" scalex="0.1" scaley="0.1" scalez="0.1" positionx="-10"></object>
+    <object name="themodel" modelid="model1" scalex="0.1" scaley="0.1" scalez="0.1" positionx="0"></object>
+    <object name="themodel" modelid="model1" scalex="0.1" scaley="0.1" scalez="0.1" positionx="10"></object>
+    <object name="themodel" modelid="model1" scalex="0.1" scaley="0.1" scalez="0.1" positionx="20"></object>
+    <object name="themodel" modelid="model1" scalex="0.1" scaley="0.1" scalez="0.1" positionx="30"></object>
+    <object name="themodel" modelid="model1" scalex="0.1" scaley="0.1" scalez="0.1" positionx="40"></object>
+
+    <!-- 
+    <cube positiony="30" colorr="1" colorg="1" colorb="1" scalex="100" scalez="100" scaley="0.1" >
+      <texture id="texid1" type="ambient" ></texture>
+    </cube>
+   -->
+    
+  </objects>
+
+
+  <skybox path="resources/textures/skybox"></skybox>
+
+</scenecontent>
+

@@ -37,220 +37,241 @@
     <Filter Include="Tinyxml">
       <UniqueIdentifier>{6104cd22-ca46-408f-8e89-9bc719021e85}</UniqueIdentifier>
     </Filter>
-    <Filter Include="scxml">
+    <Filter Include="Scxmlexample">
       <UniqueIdentifier>{3e67a20a-33e7-4d5e-b344-e45641790565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{f81dee31-c9d4-4d2c-9eca-b65713c7943d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Code\Element\Element.h">
-      <Filter>Element</Filter>
+    <ClInclude Include="include\Drive\GlobalDriver\GlobalDebugoutDriver.h">
+      <Filter>Drive\GlocalDriver</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Drive\Driver.h">
+    <ClInclude Include="include\Drive\GlobalDriver\GlobalDriver.h">
+      <Filter>Drive\GlocalDriver</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Drive\GlobalDriver\GlobalIODriver.h">
+      <Filter>Drive\GlocalDriver</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Drive\GlobalDriver\GlobalLightRendDriver.h">
+      <Filter>Drive\GlocalDriver</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Drive\GlobalDriver\GlobalLogicDriver.h">
+      <Filter>Drive\GlocalDriver</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Drive\GlobalDriver\GlobalSyncDriver.h">
+      <Filter>Drive\GlocalDriver</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Drive\GlobalDriver\LocalRendDriver.h">
+      <Filter>Drive\GlocalDriver</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Drive\LocalDriver\LocalDriver.h">
+      <Filter>Drive\LocalDriver</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Drive\LocalDriver\LocalLightDriver.h">
+      <Filter>Drive\LocalDriver</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Drive\LocalDriver\LocalRendDriver.h">
+      <Filter>Drive\LocalDriver</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Drive\Driver.h">
       <Filter>Drive</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Drive\LocalDriver\LocalDriver.h">
-      <Filter>Drive\LocalDriver</Filter>
+    <ClInclude Include="include\Drive\LocalDriver.h">
+      <Filter>Drive</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Drive\GlobalDriver\GlobalDriver.h">
-      <Filter>Drive\GlocalDriver</Filter>
+    <ClInclude Include="include\Element\CameraElement.h">
+      <Filter>Element</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Drive\LocalDriver\LocalRendDriver.h">
-      <Filter>Drive\LocalDriver</Filter>
+    <ClInclude Include="include\Element\CubeElement.h">
+      <Filter>Element</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Resource\Resource.h">
+    <ClInclude Include="include\Element\Element.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Element\LightElement.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Element\ObjectElement.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Element\SkyboxElement.h">
+      <Filter>Element</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resource\CubeResource.h">
       <Filter>Resource</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Scene\Scene.h">
+    <ClInclude Include="include\Resource\MeshResource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resource\ModelResource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resource\Resource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resource\ShaderResource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resource\SkyboxResource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resource\TextureResource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resource\Window.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scene\Scene.h">
       <Filter>Scene</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Scene\SceneContent.h">
+    <ClInclude Include="include\Scene\SceneContent.h">
       <Filter>Scene</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Resource\ModelResource.h">
-      <Filter>Resource</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\Resource\ShaderResource.h">
-      <Filter>Resource</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\Resource\MeshResource.h">
-      <Filter>Resource</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\Resource\TextureResource.h">
-      <Filter>Resource</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\Resource\Window.h">
-      <Filter>Resource</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\Element\LightElement.h">
-      <Filter>Element</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\Drive\LocalDriver\LocalLightDriver.h">
-      <Filter>Drive\LocalDriver</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\Element\ObjectElement.h">
-      <Filter>Element</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\Element\CameraElement.h">
-      <Filter>Element</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\Drive\GlobalDriver\GlobalLightRendDriver.h">
-      <Filter>Drive\GlocalDriver</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\Drive\GlobalDriver\GlobalIODriver.h">
-      <Filter>Drive\GlocalDriver</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\Drive\GlobalDriver\GlobalSyncDriver.h">
-      <Filter>Drive\GlocalDriver</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\Element\CubeElement.h">
-      <Filter>Element</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\Resource\CubeResource.h">
-      <Filter>Resource</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\Element\SkyboxElement.h">
-      <Filter>Element</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\Resource\SkyboxResource.h">
-      <Filter>Resource</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\Tinyxml\tinystr.h">
+    <ClInclude Include="include\Tinyxml\tinystr.h">
       <Filter>Tinyxml</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Tinyxml\tinyxml.h">
+    <ClInclude Include="include\Tinyxml\tinyxml.h">
       <Filter>Tinyxml</Filter>
     </ClInclude>
-    <ClInclude Include="Code\Drive\GlobalDriver\GlobalLogicDriver.h">
-      <Filter>Drive\GlocalDriver</Filter>
+    <ClInclude Include="XYY_Game_Engine.h">
+      <Filter>源文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Code\Element\Element.cpp">
+    <ClCompile Include="include\Drive\GlobalDriver\GlobalDebugoutDriver.cpp">
+      <Filter>Drive\GlocalDriver</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Drive\GlobalDriver\GlobalIODriver.cpp">
+      <Filter>Drive\GlocalDriver</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Drive\GlobalDriver\GlobalLightRendDriver.cpp">
+      <Filter>Drive\GlocalDriver</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Drive\GlobalDriver\GlobalLogicDriver.cpp">
+      <Filter>Drive\GlocalDriver</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Drive\GlobalDriver\GlobalSyncDriver.cpp">
+      <Filter>Drive\GlocalDriver</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Drive\LocalDriver\LocalLightDriver.cpp">
+      <Filter>Drive\LocalDriver</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Drive\LocalDriver\LocalRendDriver.cpp">
+      <Filter>Drive\LocalDriver</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Element\CameraElement.cpp">
       <Filter>Element</Filter>
     </ClCompile>
-    <ClCompile Include="Code\glad.c">
+    <ClCompile Include="include\Element\CubeElement.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Element\Element.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Element\LightElement.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Element\ObjectElement.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Element\SkyboxElement.cpp">
+      <Filter>Element</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Resource\CubeResource.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Resource\MeshResource.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Resource\ModelResource.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Resource\Resource.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Resource\ShaderResource.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Resource\SkyboxResource.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Resource\TextureResource.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Resource\Window.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Scene\Scene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Scene\SceneContent.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Tinyxml\tinystr.cpp">
+      <Filter>Tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Tinyxml\tinyxml.cpp">
+      <Filter>Tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Tinyxml\tinyxmlerror.cpp">
+      <Filter>Tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Tinyxml\tinyxmlparser.cpp">
+      <Filter>Tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="dependence\include\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Code\Scene\Scene.cpp">
-      <Filter>Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Scene\SceneContent.cpp">
-      <Filter>Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Resource\Resource.cpp">
-      <Filter>Resource</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Resource\ModelResource.cpp">
-      <Filter>Resource</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Resource\ShaderResource.cpp">
-      <Filter>Resource</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Resource\MeshResource.cpp">
-      <Filter>Resource</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Resource\TextureResource.cpp">
-      <Filter>Resource</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Resource\Window.cpp">
-      <Filter>Resource</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Element\LightElement.cpp">
-      <Filter>Element</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Drive\LocalDriver\LocalLightDriver.cpp">
-      <Filter>Drive\LocalDriver</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Drive\GlobalDriver\GlobalLightRendDriver.cpp">
-      <Filter>Drive\GlocalDriver</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Element\CameraElement.cpp">
-      <Filter>Element</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Drive\LocalDriver\LocalRendDriver.cpp">
-      <Filter>Drive\LocalDriver</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Element\ObjectElement.cpp">
-      <Filter>Element</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Drive\GlobalDriver\GlobalIODriver.cpp">
-      <Filter>Drive\GlocalDriver</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Drive\GlobalDriver\GlobalSyncDriver.cpp">
-      <Filter>Drive\GlocalDriver</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Element\CubeElement.cpp">
-      <Filter>Element</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Resource\CubeResource.cpp">
-      <Filter>Resource</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Element\SkyboxElement.cpp">
-      <Filter>Element</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Resource\SkyboxResource.cpp">
-      <Filter>Resource</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="XYY_Game_Engine.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Code\Tinyxml\tinystr.cpp">
-      <Filter>Tinyxml</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Tinyxml\tinyxml.cpp">
-      <Filter>Tinyxml</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Tinyxml\tinyxmlerror.cpp">
-      <Filter>Tinyxml</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Tinyxml\tinyxmlparser.cpp">
-      <Filter>Tinyxml</Filter>
-    </ClCompile>
-    <ClCompile Include="Code\Drive\GlobalDriver\GlobalLogicDriver.cpp">
-      <Filter>Drive\GlocalDriver</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="GLSL\light.frag">
+    <None Include="include\GLSL\cube.frag">
       <Filter>GLSL</Filter>
     </None>
-    <None Include="GLSL\light.vert">
+    <None Include="include\GLSL\cube.vert">
       <Filter>GLSL</Filter>
     </None>
-    <None Include="GLSL\object.frag">
+    <None Include="include\GLSL\light.frag">
       <Filter>GLSL</Filter>
     </None>
-    <None Include="GLSL\object.vert">
+    <None Include="include\GLSL\light.vert">
       <Filter>GLSL</Filter>
     </None>
-    <None Include="GLSL\shader.frag">
+    <None Include="include\GLSL\object.frag">
       <Filter>GLSL</Filter>
     </None>
-    <None Include="GLSL\shader.vert">
+    <None Include="include\GLSL\object.vert">
       <Filter>GLSL</Filter>
     </None>
-    <None Include="GLSL\skybox.frag">
+    <None Include="include\GLSL\shader.frag">
       <Filter>GLSL</Filter>
     </None>
-    <None Include="GLSL\skybox.vert">
+    <None Include="include\GLSL\shader.vert">
       <Filter>GLSL</Filter>
     </None>
-    <None Include="GLSL\cube.frag">
+    <None Include="include\GLSL\skybox.frag">
       <Filter>GLSL</Filter>
     </None>
-    <None Include="GLSL\cube.vert">
+    <None Include="include\GLSL\skybox.vert">
       <Filter>GLSL</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="scxml\Helloworld.xml">
-      <Filter>scxml</Filter>
+    <Xml Include="include\Scxmlexample\coordinate.xml">
+      <Filter>Scxmlexample</Filter>
     </Xml>
-    <Xml Include="scxml\coordinate.xml">
-      <Filter>scxml</Filter>
+    <Xml Include="include\Scxmlexample\ground.xml">
+      <Filter>Scxmlexample</Filter>
     </Xml>
-    <Xml Include="scxml\ground.xml">
-      <Filter>scxml</Filter>
+    <Xml Include="include\Scxmlexample\Helloworld.xml">
+      <Filter>Scxmlexample</Filter>
+    </Xml>
+    <Xml Include="include\Scxmlexample\zzuele.xml">
+      <Filter>Scxmlexample</Filter>
     </Xml>
   </ItemGroup>
 </Project>
