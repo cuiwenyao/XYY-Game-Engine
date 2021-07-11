@@ -227,6 +227,9 @@
     <ClCompile Include="XYY_Game_Engine.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="include\GLSL\cube.frag">
