@@ -2,7 +2,7 @@
 
 下载release并按照下面的指示进行操作。
 
-1. 将include目录放在包含目录中。
+1. 将include目录、dependence/include 目录放在包含目录中。
 
 2. 将lib目录下的文件放在库目录中，并加入链接器的附加依赖项内。
 
