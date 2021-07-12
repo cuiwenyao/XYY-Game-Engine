@@ -8,8 +8,7 @@
 #include "../Element/SkyboxElement.h"
 // ... 各种元素在这里引入，在全局驱动中就可与被直接调用
 
-#include "../tinyxml/tinyxml.h"
-
+#include <Tinyxml/tinyxml.h>
 #include <vector>
 #include <string>
 #include <map>

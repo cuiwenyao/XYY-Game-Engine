@@ -34,9 +34,6 @@
     <Filter Include="Scene">
       <UniqueIdentifier>{c3917127-0f25-456f-a919-e0ff200f8a87}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Tinyxml">
-      <UniqueIdentifier>{6104cd22-ca46-408f-8e89-9bc719021e85}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Scxmlexample">
       <UniqueIdentifier>{3e67a20a-33e7-4d5e-b344-e45641790565}</UniqueIdentifier>
     </Filter>
@@ -129,12 +126,6 @@
     <ClInclude Include="include\Scene\SceneContent.h">
       <Filter>Scene</Filter>
     </ClInclude>
-    <ClInclude Include="include\Tinyxml\tinystr.h">
-      <Filter>Tinyxml</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Tinyxml\tinyxml.h">
-      <Filter>Tinyxml</Filter>
-    </ClInclude>
     <ClInclude Include="XYY_Game_Engine.h">
       <Filter>源文件</Filter>
     </ClInclude>
@@ -209,26 +200,11 @@
     <ClCompile Include="include\Scene\SceneContent.cpp">
       <Filter>Scene</Filter>
     </ClCompile>
-    <ClCompile Include="include\Tinyxml\tinystr.cpp">
-      <Filter>Tinyxml</Filter>
-    </ClCompile>
-    <ClCompile Include="include\Tinyxml\tinyxml.cpp">
-      <Filter>Tinyxml</Filter>
-    </ClCompile>
-    <ClCompile Include="include\Tinyxml\tinyxmlerror.cpp">
-      <Filter>Tinyxml</Filter>
-    </ClCompile>
-    <ClCompile Include="include\Tinyxml\tinyxmlparser.cpp">
-      <Filter>Tinyxml</Filter>
-    </ClCompile>
     <ClCompile Include="dependence\include\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="XYY_Game_Engine.cpp">
       <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>main</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

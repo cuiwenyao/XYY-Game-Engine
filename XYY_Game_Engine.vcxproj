@@ -47,8 +47,6 @@
     <ClInclude Include="include\Resource\Window.h" />
     <ClInclude Include="include\Scene\Scene.h" />
     <ClInclude Include="include\Scene\SceneContent.h" />
-    <ClInclude Include="include\Tinyxml\tinystr.h" />
-    <ClInclude Include="include\Tinyxml\tinyxml.h" />
     <ClInclude Include="XYY_Game_Engine.h" />
   </ItemGroup>
   <ItemGroup>
@@ -76,11 +74,6 @@
     <ClCompile Include="include\Resource\Window.cpp" />
     <ClCompile Include="include\Scene\Scene.cpp" />
     <ClCompile Include="include\Scene\SceneContent.cpp" />
-    <ClCompile Include="include\Tinyxml\tinystr.cpp" />
-    <ClCompile Include="include\Tinyxml\tinyxml.cpp" />
-    <ClCompile Include="include\Tinyxml\tinyxmlerror.cpp" />
-    <ClCompile Include="include\Tinyxml\tinyxmlparser.cpp" />
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="XYY_Game_Engine.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -168,8 +161,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\Users\19700\Desktop\coding\XYY-Game-Engine\dependence\include;C:\Users\19700\Desktop\coding\XYY-Game-Engine\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\19700\Desktop\coding\XYY-Game-Engine\dependence\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\19700\Desktop\XYY-Game-Engine\include;C:\Users\19700\Desktop\XYY-Game-Engine\dependence\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\19700\Desktop\XYY-Game-Engine\dependence\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -236,7 +229,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>E:\github\XYY-Game-Engine\dependence\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimp-vc142-mt.lib;tinyxml.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -1,4 +1,4 @@
-#include "./GlobalDebugoutDriver.h"
+#include <Drive/GlobalDriver/GlobalDebugoutDriver.h>
 
 void XYY_GlobalDebugoutDriver::init()
 {

@@ -8,7 +8,7 @@
 #include "../Resource/MeshResource.h"
 #include "../Resource/CubeResource.h"
 #include "../Resource/SkyboxResource.h"
-#include "../Resource/Window.h";
+#include "../Resource/Window.h"
 
 // ... 在这里引入各种资源类 ，就可以在Scene 与 场景类中直接使用
 
