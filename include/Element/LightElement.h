@@ -1,7 +1,7 @@
 #pragma once
 #include "./Element.h"
 
-class __declspec(dllexport) XYY_LightElement : public XYY_Element
+class   XYY_LightElement : public XYY_Element
 {
 	/*
 		光元素 是一种无形状的 ， 发光的实体， 其做为 发光的一种 基本元素

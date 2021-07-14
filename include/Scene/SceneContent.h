@@ -17,7 +17,7 @@
 写在这里：
 	场景内容中的一切元素，都以指针的形式存储，真正的实体由 引擎 动态分配。 （可以考虑实现一个专门用来管理资源的模块）
 */
-class __declspec(dllexport) XYY_SceneContent
+class   XYY_SceneContent
 {
 public:
 	// 为了提升 全局驱动 的调用速度 ， 将 灯光、普通物体与其他物体 分开放置

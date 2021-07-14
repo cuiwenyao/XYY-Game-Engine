@@ -23,7 +23,7 @@ struct Vertex {
 };
 
 
-class __declspec(dllexport) XYY_MeshResource : public XYY_Resource
+class   XYY_MeshResource : public XYY_Resource
 {
 public:
 	// mesh Data

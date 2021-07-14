@@ -1,14 +1,13 @@
 #pragma once
 
-#include "../Drive/GlobalDriver/GlobalDriver.h"
-#include "../Drive/GlobalDriver/GlobalLightRendDriver.h"
-#include "../Drive/GlobalDriver/GlobalIODriver.h"
-#include "../Drive/GlobalDriver/GlobalSyncDriver.h"
-#include "../Drive/GlobalDriver/GlobalLogicDriver.h"
-#include "../Drive/GlobalDriver/GlobalDebugoutDriver.h"
+#include "../Driver/GlobalDriver/GlobalDriver.h"
+#include "../Driver/GlobalDriver/GlobalLightRendDriver.h"
+#include "../Driver/GlobalDriver/GlobalIODriver.h"
+#include "../Driver/GlobalDriver/GlobalSyncDriver.h"
+#include "../Driver/GlobalDriver/GlobalLogicDriver.h"
+#include "../Driver/GlobalDriver/GlobalDebugoutDriver.h"
 
-
-class __declspec(dllexport) XYY_Scene
+class   XYY_Scene
 {
 public:
 	XYY_Window * win;						// 多个场景可以共用一个窗口，所以使用指针 

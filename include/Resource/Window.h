@@ -9,7 +9,7 @@ const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
 const unsigned int GL_VERSION_MAJOR = 3;
 const unsigned int GL_VERSION_MINOR = 3;
-class __declspec(dllexport) XYY_Window
+class   XYY_Window
 {
 public:
 	std::string title = "XYY GAME ENGINE";

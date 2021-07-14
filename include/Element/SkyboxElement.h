@@ -1,7 +1,7 @@
 #pragma once
 #include "./ObjectElement.h"
 
-class __declspec(dllexport) XYY_SkyboxElement : public XYY_ObjectElement
+class   XYY_SkyboxElement : public XYY_ObjectElement
 {
 public:
 	XYY_LocalRendDriver * ld_rend;

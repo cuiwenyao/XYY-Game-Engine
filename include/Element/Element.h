@@ -1,12 +1,13 @@
 #pragma once
 
 #include <vector>
-#include "../Drive/LocalDriver/LocalDriver.h"
-#include "../Drive/LocalDriver/LocalRendDriver.h"
-#include "../Drive/LocalDriver/LocalLightDriver.h"
+#include "../Driver/LocalDriver/LocalDriver.h"
+#include "../Driver/LocalDriver/LocalRendDriver.h"
+#include "../Driver/LocalDriver/LocalLightDriver.h"
 
 
-class __declspec(dllexport) XYY_Element
+
+class   XYY_Element
 {
 public:
 	unsigned int type;					// 元素的种类编号		 定义为：  0：灯光  1：普通物体  2：其他（天空盒等）

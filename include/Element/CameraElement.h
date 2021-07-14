@@ -26,8 +26,8 @@ const float ZOOM = 45.0f;
 
 /* 相机元素本质上是一套数据结构，可以作为元素，也可以作为拍摄驱动 */
 
-// An abstract camera class __declspec(dllexport) that processes input and calculates the corresponding Euler Angles, Vectors and Matrices for use in OpenGL
-class __declspec(dllexport) XYY_CameraElement : public XYY_Element //: public Element
+// An abstract camera class   that processes input and calculates the corresponding Euler Angles, Vectors and Matrices for use in OpenGL
+class   XYY_CameraElement : public XYY_Element //: public Element
 {
 public:
 	// camera Attributes

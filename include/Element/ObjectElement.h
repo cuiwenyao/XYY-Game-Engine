@@ -1,7 +1,7 @@
 #pragma once
 #include "./Element.h"
 
-class __declspec(dllexport) XYY_ObjectElement : public XYY_Element
+class   XYY_ObjectElement : public XYY_Element
 {
 	/*
 		Object元素是游戏中存在的实体，拥有局部渲染驱动，被局部发光驱动影响。
