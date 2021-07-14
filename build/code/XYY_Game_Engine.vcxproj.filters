@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Component\_Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Component\_Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\GlobalDriver\GlobalDebugoutDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\GlobalDriver\GlobalIODriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\GlobalDriver\GlobalLightRendDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\GlobalDriver\GlobalLogicDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\GlobalDriver\GlobalSyncDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\LocalDriver\LocalLightDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\LocalDriver\LocalRendDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Element\CameraElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Element\CubeElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Element\Element.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Element\LightElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Element\ObjectElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Element\SkyboxElement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\CubeResource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\MeshResource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\ModelResource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\Resource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\ShaderResource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\SkyboxResource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\TextureResource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\Window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Scene\Scene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Scene\SceneContent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Sync\GlobalSync.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\contrib\include\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Component\_Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Component\_Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\Driver.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\GlobalDriver\GlobalDebugoutDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\GlobalDriver\GlobalDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\GlobalDriver\GlobalIODriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\GlobalDriver\GlobalLightRendDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\GlobalDriver\GlobalLogicDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\GlobalDriver\GlobalSyncDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\GlobalDriver\LocalRendDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\LocalDriver.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\LocalDriver\LocalDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\LocalDriver\LocalLightDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\LocalDriver\LocalRendDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Element\CameraElement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Element\CubeElement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Element\Element.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Element\LightElement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Element\ObjectElement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Element\SkyboxElement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\CubeResource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\MeshResource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\ModelResource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\ShaderResource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\SkyboxResource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\TextureResource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Scene\Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Scene\SceneContent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Sync\GlobalSync.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{18E492E1-D269-31B1-974E-18EEE8BDDB38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0F54445B-C6D4-3962-8EE8-B3090A877E65}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

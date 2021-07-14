@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{23D821AB-6E47-3459-97D4-F85223FE4892}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>XYY_Game_Engine</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\dll\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">XYY_Game_Engine.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">XYY_Game_Engine</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\dll\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">XYY_Game_Engine.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">XYY_Game_Engine</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\dll\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">XYY_Game_Engine.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">XYY_Game_Engine</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\dll\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">XYY_Game_Engine.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">XYY_Game_Engine</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\include;C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\contrib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";XYY_Game_Engine_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";XYY_Game_Engine_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\include;C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\contrib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\include;C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\contrib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimp-vc142-mt.lib;tinyxml.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/contrib/lib;C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/contrib/lib/$(Configuration);C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/build/../lib;C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/build/../lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/lib/Debug/XYY_Game_Engine.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/dll/Debug/XYY_Game_Engine.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\include;C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\contrib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";XYY_Game_Engine_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";XYY_Game_Engine_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\include;C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\contrib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\include;C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\contrib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimp-vc142-mt.lib;tinyxml.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/contrib/lib;C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/contrib/lib/$(Configuration);C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/build/../lib;C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/build/../lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/lib/Release/XYY_Game_Engine.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/dll/Release/XYY_Game_Engine.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\include;C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\contrib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";XYY_Game_Engine_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";XYY_Game_Engine_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\include;C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\contrib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\include;C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\contrib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimp-vc142-mt.lib;tinyxml.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/contrib/lib;C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/contrib/lib/$(Configuration);C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/build/../lib;C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/build/../lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/lib/MinSizeRel/XYY_Game_Engine.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/dll/MinSizeRel/XYY_Game_Engine.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\include;C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\contrib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";XYY_Game_Engine_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";XYY_Game_Engine_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\include;C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\contrib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\include;C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\contrib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glfw3.lib;assimp-vc142-mt.lib;tinyxml.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/contrib/lib;C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/contrib/lib/$(Configuration);C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/build/../lib;C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/build/../lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/lib/RelWithDebInfo/XYY_Game_Engine.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/dll/RelWithDebInfo/XYY_Game_Engine.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake -BC:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/build --check-stamp-file C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/build/code/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\build\code\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake -BC:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/build --check-stamp-file C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/build/code/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\build\code\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake -BC:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/build --check-stamp-file C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/build/code/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\build\code\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake -BC:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/build --check-stamp-file C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/build/code/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\build\code\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Component\_Scene.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Component\_Scene.h" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Component\_Window.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Component\_Window.h" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\Driver.hpp" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\GlobalDriver\GlobalDebugoutDriver.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\GlobalDriver\GlobalDebugoutDriver.h" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\GlobalDriver\GlobalDriver.h" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\GlobalDriver\GlobalIODriver.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\GlobalDriver\GlobalIODriver.h" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\GlobalDriver\GlobalLightRendDriver.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\GlobalDriver\GlobalLightRendDriver.h" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\GlobalDriver\GlobalLogicDriver.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\GlobalDriver\GlobalLogicDriver.h" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\GlobalDriver\GlobalSyncDriver.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\GlobalDriver\GlobalSyncDriver.h" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\GlobalDriver\LocalRendDriver.h" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\LocalDriver.hpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\LocalDriver\LocalDriver.h" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\LocalDriver\LocalLightDriver.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\LocalDriver\LocalLightDriver.h" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\LocalDriver\LocalRendDriver.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Driver\LocalDriver\LocalRendDriver.h" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Element\CameraElement.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Element\CameraElement.h" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Element\CubeElement.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Element\CubeElement.h" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Element\Element.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Element\Element.h" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Element\LightElement.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Element\LightElement.h" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Element\ObjectElement.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Element\ObjectElement.h" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Element\SkyboxElement.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Element\SkyboxElement.h" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\CubeResource.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\CubeResource.h" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\MeshResource.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\MeshResource.h" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\ModelResource.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\ModelResource.h" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\Resource.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\Resource.h" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\ShaderResource.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\ShaderResource.h" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\SkyboxResource.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\SkyboxResource.h" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\TextureResource.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\TextureResource.h" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\Window.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Resource\Window.h" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Scene\Scene.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Scene\Scene.h" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Scene\SceneContent.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Scene\SceneContent.h" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Sync\GlobalSync.cpp" />
+    <ClInclude Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\code\Sync\GlobalSync.h" />
+    <ClCompile Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\contrib\include\glad.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\19700\Desktop\cmakelearn\XYY-Game-Engine-CMake\build\ZERO_CHECK.vcxproj">
+      <Project>{05A7F424-C0FC-3AB7-8992-6D60DB557770}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

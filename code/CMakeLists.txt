@@ -1,6 +1,7 @@
-aux_source_directory(. DIR_XYY_Game_Engine_LIB_SRCS)
+#code 
 
-FILE(GLOB SOURCE_CODE       
+#code 中的所有文件
+FILE(GLOB_RECURSE SOURCE_CODE       
     Component/*
     Driver/*
     Driver/LocalDriver/*
@@ -9,48 +10,35 @@ FILE(GLOB SOURCE_CODE
     Resource/*
     Scene/*
     Sync/*
+    ${INCLUDE_PATH_CONTRIB}/*.c
 )
 
-FILE(GLOB DEPENDENCE_LIBS
-    ${PROJECT_SOURCE_DIR}/contrib/lib/*
+
+
+FILE(
+    GLOB DEPENDENCE_LIB
+    ${LIBRARY_PATH_CONTRIB}/*.lib
 )
-
-FILE(GLOB EXTERNAL_HEADERS
-    ${PROJECT_SOURCE_DIR}/contrib/include/*
-    ${PROJECT_SOURCE_DIR}/contrib/include/assimp/*
-    ${PROJECT_SOURCE_DIR}/contrib/include/assimp/Compiler/*
-    ${PROJECT_SOURCE_DIR}/contrib/include/port/*
-    ${PROJECT_SOURCE_DIR}/contrib/include/glad/*
-    ${PROJECT_SOURCE_DIR}/contrib/include/GLFW/*
-    ${PROJECT_SOURCE_DIR}/contrib/include/glm/*
-    ${PROJECT_SOURCE_DIR}/contrib/include/glm/detail/*
-    ${PROJECT_SOURCE_DIR}/contrib/include/ext/*
-    ${PROJECT_SOURCE_DIR}/contrib/include/gtc/*
-    ${PROJECT_SOURCE_DIR}/contrib/include/gtx/*
-    ${PROJECT_SOURCE_DIR}/contrib/include/simd/*
-    ${PROJECT_SOURCE_DIR}/contrib/include/KHR/*
-    ${PROJECT_SOURCE_DIR}/contrib/include/Tinyxml/*
-)
-
-#assimp-vc142-mt.dll
-#link_libraries( glfw3.lib tinyxml.lib)
-
-#引用目录
-INCLUDE_DIRECTORIES(${THIRD_PART_INCLUDE_PATH})
-#库目录
-LINK_DIRECTORIES(${THIRD_PART_LIB_PATH})
 
 #生成链接库
-add_library(XYY_Game_Engine STATIC ${SOURCE_CODE})
-
-
-find_library(THIRD_PART_LIB NAMES jsoncpp PATHS ./jsoncpp)
-
-target_link_libraries(XYY_Game_Engine assimp-vc142-mt.lib assimp-vc142-mt.dll glfw3.lib tinyxml.lib)
-
-
-#MESSAGE(status ${DEPENDENCE_LIBS}\n)
-
-#设置语言
-SET_TARGET_PROPERTIES(XYY_Game_Engine PROPERTIES LINKER_LANGUAGE C++)
-
+add_library(XYY_Game_Engine SHARED ${SOURCE_CODE})
+SetDefaultTargetProperties(XYY_Game_Engine)
+#  应该还要加上 opengl32.lib
+target_link_libraries(XYY_Game_Engine   
+opengl32  
+glfw3.lib 
+assimp-vc142-mt.lib  
+tinyxml.lib  
+kernel32.lib
+user32.lib
+gdi32.lib
+winspool.lib
+comdlg32.lib
+advapi32.lib
+shell32.lib
+ole32.lib
+oleaut32.lib
+uuid.lib
+odbc32.lib
+odbccp32.lib
+)
