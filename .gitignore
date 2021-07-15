@@ -1,7 +1,0 @@
-.git
-.vs
-Debug
-resources/objects/*
-include/resources/objects/*
-Release
-x64

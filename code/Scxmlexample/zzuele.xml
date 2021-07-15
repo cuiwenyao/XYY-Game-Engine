@@ -1,8 +1,0 @@
-<scenecontent>
-
-  <objects>
-    <object modelpath="resources/objects/zzuele/bush.gltf" ></object>
-  </objects>
-  <skybox path="resources/textures/skybox"></skybox>
-
-</scenecontent>
