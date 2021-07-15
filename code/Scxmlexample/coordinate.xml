@@ -1,0 +1,38 @@
+<scenecontent>
+  <objects>
+    <cube colorr="1" positionx="50" scalex="99" ></cube>
+    <!--  
+    <cube colorr="1" positionx="2" ></cube>
+    <cube colorr="1" positionx="3" ></cube>
+    <cube colorr="1" positionx="4" ></cube>
+    <cube colorr="1" positionx="5" ></cube>
+    -->
+
+    <cube colorg="1" positiony="50" scaley="99" ></cube>
+    <!-- 
+    <cube colorg="1" positiony="2" ></cube>
+    <cube colorg="1" positiony="3" ></cube>
+    <cube colorg="1" positiony="4" ></cube>
+    <cube colorg="1" positiony="5" ></cube>
+    -->
+
+    <cube colorb="1" positionz="50" scalez="99" ></cube>
+    <!--
+    <cube colorb="1" positionz="2" ></cube>
+    <cube colorb="1" positionz="3" ></cube>
+    <cube colorb="1" positionz="4" ></cube>
+    <cube colorb="1" positionz="5" ></cube>
+    -->
+
+    <cube colorr="1" colorg="1" colorb="1" ></cube>
+    
+  </objects>
+
+  <skybox path="resources/textures/skybox"></skybox>
+
+  <cameras>
+    <camera ></camera>
+    <camera use="true" positionz="100" positionx="20" postiony="20" ></camera>
+  </cameras>
+  
+</scenecontent>
