@@ -1,3 +1,0 @@
-C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/lib/XYY_Game_Engine.lib
-C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/bin/XYY_Game_Engine.dll
-C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/bin/XYY_Game_Engine.dll

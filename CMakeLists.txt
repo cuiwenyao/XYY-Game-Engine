@@ -21,11 +21,13 @@ set(INCLUDE_PATH_CODE ${CMAKE_CURRENT_LIST_DIR}/include/)
 set(INCLUDE_PATH_CONTRIB ${CMAKE_CURRENT_LIST_DIR}/contrib/include/)
 #编译所需库目录
 set(LIBRARY_PATH_CONTRIB ${CMAKE_CURRENT_LIST_DIR}/contrib/lib/)
-
+#设置test路径
+set(TEST_PATH ${CMAKE_CURRENT_LIST_DIR}/build/test/)
 #指定程序的包含目录 库目录
 #引用目录
 INCLUDE_DIRECTORIES(${INCLUDE_PATH_CODE})
 INCLUDE_DIRECTORIES(${INCLUDE_PATH_CONTRIB})
+INCLUDE_DIRECTORIES(${TEST_PATH}/include)
 #库目录 将生成的lib 目录也包含在内，为了给test使用
 LINK_DIRECTORIES(${LIBRARY_PATH_CONTRIB})
 LINK_DIRECTORIES(${LIB_PATH})
@@ -52,25 +54,77 @@ add_subdirectory(${CODE_ROOT_PATH})
 #LIBRARY DESTINATION lib
 #ARCHIVE DESTINATION libstatic )
 
+#放入 lib 文件夹
 INSTALL(TARGETS
     XYY_Game_Engine
     LIBRARY DESTINATION
     ${CMAKE_CURRENT_LIST_DIR}/lib/
 )
 
+#放入 bin 中
 INSTALL(FILES
     ${CMAKE_CURRENT_LIST_DIR}/dll/Release/XYY_Game_Engine.dll
     DESTINATION
     ${CMAKE_CURRENT_LIST_DIR}/bin/
 )
 
+INSTALL(FILES
+    ${CMAKE_CURRENT_LIST_DIR}/dll/assimp-vc142-mt.dll
+    DESTINATION
+    ${CMAKE_CURRENT_LIST_DIR}/bin
+)
+
+#对 test 增加支持   dll  release
+INSTALL(FILES
+    ${CMAKE_CURRENT_LIST_DIR}/bin/assimp-vc142-mt.dll
+    DESTINATION
+    ${CMAKE_CURRENT_LIST_DIR}/build/test/Release
+)
+
+INSTALL(FILES
+    ${CMAKE_CURRENT_LIST_DIR}/bin/XYY_Game_Engine.dll
+    DESTINATION
+    ${CMAKE_CURRENT_LIST_DIR}/build/test/Release
+)
+INSTALL(FILES
+    ${CMAKE_CURRENT_LIST_DIR}/bin/assimp-vc142-mt.dll
+    DESTINATION
+    ${CMAKE_CURRENT_LIST_DIR}/build/test/Debug
+)
+INSTALL(FILES
+    ${CMAKE_CURRENT_LIST_DIR}/bin/XYY_Game_Engine.dll
+    DESTINATION
+    ${CMAKE_CURRENT_LIST_DIR}/build/test/Debug
+)
+# example 
+INSTALL(
+    DIRECTORY
+    ${CODE_ROOT_PATH}/Scxmlexample
+    DESTINATION
+    ${TEST_PATH}/
+)
+# resources
+INSTALL(
+    DIRECTORY
+    ${CODE_ROOT_PATH}/resources
+    DESTINATION
+    ${TEST_PATH}/
+)
+# header
+INSTALL(
+    DIRECTORY
+    ${CMAKE_CURRENT_LIST_DIR}/include
+    DESTINATION
+    ${TEST_PATH}/
+)
+
 
 #target main
-add_executable(main main.cpp)
-ADD_DEPENDENCIES(main XYY_Game_Engine)
-target_link_libraries(main XYY_Game_Engine.lib)
-
+#add_executable(main main.cpp)
+#ADD_DEPENDENCIES(main XYY_Game_Engine)
+#target_link_libraries(main XYY_Game_Engine.lib)
 
 #target 测试
+add_subdirectory(test)
 
 

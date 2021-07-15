@@ -1,6 +1,0 @@
-C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/build/CMakeFiles/INSTALL.dir
-C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/build/CMakeFiles/main.dir
-C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/build/CMakeFiles/ZERO_CHECK.dir
-C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/build/code/CMakeFiles/XYY_Game_Engine.dir
-C:/Users/19700/Desktop/cmakelearn/XYY-Game-Engine-CMake/build/code/CMakeFiles/INSTALL.dir
