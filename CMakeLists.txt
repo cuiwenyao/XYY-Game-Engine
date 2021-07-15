@@ -48,12 +48,6 @@ endfunction()
 add_subdirectory(${CODE_ROOT_PATH})
 
 
-#install
-#INSTALL(TARGETS myrun mylib mystaticlib
-#RUNTIME DESTINATION bin
-#LIBRARY DESTINATION lib
-#ARCHIVE DESTINATION libstatic )
-
 #放入 lib 文件夹
 INSTALL(TARGETS
     XYY_Game_Engine
@@ -62,17 +56,23 @@ INSTALL(TARGETS
 )
 
 #放入 bin 中
+
+if(EXISTS   ${CMAKE_CURRENT_LIST_DIR}/dll/Debug/XYY_Game_Engine.dll)
 INSTALL(FILES
-    ${CMAKE_CURRENT_LIST_DIR}/dll/Release/XYY_Game_Engine.dll
+    ${CMAKE_CURRENT_LIST_DIR}/dll/Debug/XYY_Game_Engine.dll
     DESTINATION
     ${CMAKE_CURRENT_LIST_DIR}/bin/
 )
+endif()
 
+if(EXISTS      ${CMAKE_CURRENT_LIST_DIR}/dll/assimp-vc142-mt.dll)
 INSTALL(FILES
     ${CMAKE_CURRENT_LIST_DIR}/dll/assimp-vc142-mt.dll
     DESTINATION
     ${CMAKE_CURRENT_LIST_DIR}/bin
 )
+endif()
+
 
 #对 test 增加支持   dll  release
 INSTALL(FILES
@@ -118,11 +118,6 @@ INSTALL(
     ${TEST_PATH}/
 )
 
-
-#target main
-#add_executable(main main.cpp)
-#ADD_DEPENDENCIES(main XYY_Game_Engine)
-#target_link_libraries(main XYY_Game_Engine.lib)
 
 #target 测试
 add_subdirectory(test)
