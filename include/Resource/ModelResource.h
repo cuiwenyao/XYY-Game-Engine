@@ -7,7 +7,7 @@
 #include "./Resource.h"
 #include "./MeshResource.h"
 
-class   XYY_ModelResource : public XYY_Resource
+class __declspec(dllexport) XYY_ModelResource : public XYY_Resource
 {
 public:
 	unsigned int texture_ambient_count = 0;

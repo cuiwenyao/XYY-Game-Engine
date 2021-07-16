@@ -7,7 +7,7 @@
 #include "../Driver/GlobalDriver/GlobalLogicDriver.h"
 #include "../Driver/GlobalDriver/GlobalDebugoutDriver.h"
 
-class   XYY_Scene
+class __declspec(dllexport) XYY_Scene
 {
 public:
 	XYY_Window * win;						// 多个场景可以共用一个窗口，所以使用指针 

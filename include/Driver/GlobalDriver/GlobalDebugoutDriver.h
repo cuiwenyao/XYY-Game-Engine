@@ -3,7 +3,7 @@
 
 #define DEBUG_TURN false		// DEBUG ¿ª¹Ø
 
-class   XYY_GlobalDebugoutDriver : XYY_GlobalDriver
+class __declspec(dllexport) XYY_GlobalDebugoutDriver : XYY_GlobalDriver
 {
 public:
 	bool turn = DEBUG_TURN;

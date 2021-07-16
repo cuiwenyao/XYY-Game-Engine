@@ -29,7 +29,7 @@ bool XYY_SceneContent::loadXML(const char * path)
 	}
 
 	// 建立默认 shader
-	//c++ 的目录以程序运行的目录问基准，即以main所在位置为基准，所以main入口文件和start入口文件要保持同级目录。
+	//c++ 的目录以程序运行的目录问基准，即以项目配置文件所在位置为基准，所以main入口文件和start入口文件要保持同级目录。
 	XYY_ShaderResource * defaultobjectshader = new XYY_ShaderResource("include/GLSL/object.vert", "include/GLSL/object.frag");
 	XYY_ShaderResource * defaultskyboxshader = new XYY_ShaderResource("include/GLSL/skybox.vert", "include/GLSL/skybox.frag");
 

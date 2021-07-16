@@ -4,7 +4,7 @@
 #include "./ShaderResource.h"
 
 
-class   XYY_CubeResource : XYY_Resource
+class __declspec(dllexport) XYY_CubeResource : XYY_Resource
 {
 public:
 	float vertices[18 * 6];

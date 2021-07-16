@@ -12,7 +12,7 @@
 // ---------------
 
 
-class   XYY_LocalRendDriver : public XYY_LocalDriver
+class __declspec(dllexport) XYY_LocalRendDriver : public XYY_LocalDriver
 {
 public:
 	int type = 0;			// 0£ºmodel  1£ºcube  2:skybox

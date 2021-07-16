@@ -2,7 +2,7 @@
 
 #include "./GlobalDriver.h"
 
-class   XYY_GlobalSyncDriver : public XYY_GlobalDriver
+class __declspec(dllexport) XYY_GlobalSyncDriver : public XYY_GlobalDriver
 {
 public:
 	float currenttime;			// 当前时间

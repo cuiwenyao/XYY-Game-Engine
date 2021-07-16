@@ -12,7 +12,7 @@
 
 */
 
-class   XYY_LocalDriver : public XYY_Driver
+class __declspec(dllexport) XYY_LocalDriver : public XYY_Driver
 {
 public:
 	

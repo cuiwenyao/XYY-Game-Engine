@@ -5,6 +5,7 @@
 XYY_ModelResource::XYY_ModelResource(std::string const& path, bool gamma) : gammaCorrection(gamma)
 {
 	loadModel(path);
+
 }
 
 // draws the model, and thus all its meshes
@@ -19,7 +20,9 @@ void XYY_ModelResource::draw(XYY_ShaderResource & shader)
 void XYY_ModelResource::loadModel(std::string const& path)
 {
 	// read file via ASSIMP
-	Assimp::Importer importer;
+	Assimp::Importer importer; 
+	importer.SetPropertyBool("aiProcess_FixInfacingNormals", true);
+	importer.SetPropertyBool("aiProcess_ConvertToLeftHanded", true);
 	const aiScene* scene = importer.ReadFile(path, aiProcess_Triangulate | aiProcess_GenSmoothNormals | aiProcess_FlipUVs | aiProcess_CalcTangentSpace);
 	// check for errors
 	if (!scene || scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode) // if is Not Zero

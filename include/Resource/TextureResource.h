@@ -8,7 +8,7 @@
 #define XYY_TEXTURE_TYPE_SPECULAR 3
 #define XYY_TEXTURE_TYPE_NORMAL 4
 
-class   XYY_TextureResource : public XYY_Resource
+class __declspec(dllexport) XYY_TextureResource : public XYY_Resource
 {
 public:
 	unsigned int id;

@@ -7,7 +7,7 @@
 #include <glm/gtc/type_ptr.hpp>
 #include <iostream>
 
-class   XYY_ShaderResource : public XYY_Resource
+class __declspec(dllexport) XYY_ShaderResource : public XYY_Resource
 {
 	public:
 		unsigned int ID;	// 纹理的标识符

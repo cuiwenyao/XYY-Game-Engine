@@ -25,7 +25,7 @@ set(LIBRARY_PATH_CONTRIB ${CMAKE_CURRENT_LIST_DIR}/contrib/lib/)
 set(TEST_PATH ${CMAKE_CURRENT_LIST_DIR}/build/test/)
 #指定程序的包含目录 库目录
 #引用目录
-INCLUDE_DIRECTORIES(${INCLUDE_PATH_CODE})
+#INCLUDE_DIRECTORIES(${INCLUDE_PATH_CODE})
 INCLUDE_DIRECTORIES(${INCLUDE_PATH_CONTRIB})
 INCLUDE_DIRECTORIES(${TEST_PATH}/include)
 #库目录 将生成的lib 目录也包含在内，为了给test使用
@@ -65,7 +65,7 @@ INSTALL(FILES
 )
 endif()
 
-if(EXISTS      ${CMAKE_CURRENT_LIST_DIR}/dll/assimp-vc142-mt.dll)
+if(EXISTS    ${CMAKE_CURRENT_LIST_DIR}/dll/assimp-vc142-mt.dll)
 INSTALL(FILES
     ${CMAKE_CURRENT_LIST_DIR}/dll/assimp-vc142-mt.dll
     DESTINATION
@@ -74,7 +74,7 @@ INSTALL(FILES
 endif()
 
 
-#对 test 增加支持   dll  release
+#对 test 增加支持   dll  release  test 所有的引用都来原来自include中的
 INSTALL(FILES
     ${CMAKE_CURRENT_LIST_DIR}/bin/assimp-vc142-mt.dll
     DESTINATION
@@ -96,17 +96,110 @@ INSTALL(FILES
     DESTINATION
     ${CMAKE_CURRENT_LIST_DIR}/build/test/Debug
 )
+
+FILE(
+    GLOB_RECURSE Header_Driver
+    ${CODE_ROOT_PATH}/Driver/*.hpp
+)
+FILE(
+    GLOB_RECURSE Header_Driver_LocalDriver
+    ${CODE_ROOT_PATH}/Driver/LocalDriver/*.h
+)
+FILE(
+    GLOB_RECURSE Header_Driver_Global
+    ${CODE_ROOT_PATH}/Driver/GlobalDriver/*.h
+)
+#SRC_Element
+FILE(
+    GLOB_RECURSE Header_Element
+    ${CODE_ROOT_PATH}/Element/*.h
+)
+#SRC_Resource
+FILE(
+    GLOB_RECURSE Header_Resource
+    ${CODE_ROOT_PATH}/Resource/*.h
+)
+#SRC_Resource
+FILE(
+    GLOB_RECURSE Header_Scene
+    ${CODE_ROOT_PATH}/Scene/*.h
+)
+#SRC_Sync
+FILE(
+    GLOB_RECURSE Header_Sync
+    ${CODE_ROOT_PATH}/Sync/*.h
+)
+INSTALL(
+    FILES
+    ${Header_Driver}
+    DESTINATION
+    ${INCLUDE_PATH_CODE}/Driver/
+)
+INSTALL(
+    FILES
+    ${Header_Driver_LocalDriver}
+    DESTINATION
+    ${INCLUDE_PATH_CODE}/Driver/LocalDriver/
+)
+INSTALL(
+    FILES
+    ${Header_Driver_Global}
+    DESTINATION
+    ${INCLUDE_PATH_CODE}/Driver/GlobalDriver/
+)
+INSTALL(
+    FILES
+    ${Header_Element}
+    DESTINATION
+    ${INCLUDE_PATH_CODE}/Element/
+)
+INSTALL(
+    FILES
+    ${Header_Resource}
+    DESTINATION
+    ${INCLUDE_PATH_CODE}/Resource/
+)
+INSTALL(
+    FILES
+    ${Header_Scene}
+    DESTINATION
+    ${INCLUDE_PATH_CODE}/Scene/
+)
+INSTALL(
+    FILES
+    ${Header_Sync}
+    DESTINATION
+    ${INCLUDE_PATH_CODE}/Sync/
+)
+INSTALL(
+    DIRECTORY
+    ${CMAKE_CURRENT_LIST_DIR}/code/Scxmlexample
+    DESTINATION
+    ${CMAKE_CURRENT_LIST_DIR}/include/
+)
+INSTALL(
+    DIRECTORY
+    ${CMAKE_CURRENT_LIST_DIR}/code/resources
+    DESTINATION
+    ${CMAKE_CURRENT_LIST_DIR}/include/
+)
+INSTALL(
+    DIRECTORY
+    ${CMAKE_CURRENT_LIST_DIR}/code/GLSL
+    DESTINATION
+    ${CMAKE_CURRENT_LIST_DIR}/include/
+)
 # example 
 INSTALL(
     DIRECTORY
-    ${CODE_ROOT_PATH}/Scxmlexample
+    ${CMAKE_CURRENT_LIST_DIR}/include/Scxmlexample
     DESTINATION
     ${TEST_PATH}/
 )
 # resources
 INSTALL(
     DIRECTORY
-    ${CODE_ROOT_PATH}/resources
+    ${CMAKE_CURRENT_LIST_DIR}/include/resources
     DESTINATION
     ${TEST_PATH}/
 )

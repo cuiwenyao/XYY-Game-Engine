@@ -11,7 +11,7 @@ void XYY_GlobalIODriver::init(XYY_Window * win)
 	/*注册回调函数*/
 	//回调函数用在全局控制上面   日后写全局驱动的话，将全局的回调写上去。
 	//对于普通物体的IO控制，就不太需要回调函数了。
-	//glfwSetFramebufferSizeCallback(win->getwindow(), window_framebuffer_size_callback );
+	glfwSetFramebufferSizeCallback(win->getwindow(), window_framebuffer_size_callback );
 	//glfwSetCursorPosCallback(win->getwindow(), window_mouse_callback);
 	//glfwSetScrollCallback(win->getwindow(), window_scroll_callback);
 	//glfwSetMouseButtonCallback(win->getwindow(),window_mouse_button_callback);
@@ -82,7 +82,7 @@ void XYY_GlobalIODriver::window_seticon_callback(const std::string& iconpath)
 }
 void XYY_GlobalIODriver::window_framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
-	// glViewport(0, 0, width, height);
+	glViewport(0, 0, width, height);
 }
 
 void XYY_GlobalIODriver::window_mouse_callback(GLFWwindow* window, double xpos, double ypos)

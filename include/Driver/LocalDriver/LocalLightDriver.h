@@ -15,7 +15,7 @@
 #define XYY_DEFAULT_COLOR_A glm::vec4(1,1,1,1)
 // ---------------
 
-class   XYY_LocalLightDriver : public XYY_LocalDriver
+class __declspec(dllexport) XYY_LocalLightDriver : public XYY_LocalDriver
 {
 public:
 	unsigned int type = 0;		// 0：平行光 1：点光源 2：聚光源

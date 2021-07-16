@@ -3,7 +3,7 @@
 #include "./GlobalDriver.h"
 #include "./GlobalSyncDriver.h"
 
-class     XYY_GlobalIODriver : public XYY_GlobalDriver
+class  __declspec(dllexport)  XYY_GlobalIODriver : public XYY_GlobalDriver
 {
 public:
 	float mouselastX;//Êó±êºá×ø±ê

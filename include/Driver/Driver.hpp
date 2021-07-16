@@ -16,7 +16,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-class XYY_Driver
+class __declspec(dllexport) XYY_Driver
 {
 public:
 	int tag;							 // 标签，用于连接全局驱动与物理驱动

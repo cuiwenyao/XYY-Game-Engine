@@ -18,7 +18,7 @@ XYY_Scene::XYY_Scene( XYY_Window * _win , XYY_SceneContent * _sc )
 }
 XYY_Scene::XYY_Scene()
 {
-	XYY_Window * win_ = new XYY_Window(800, 600, 3, 3);
+	XYY_Window * win_ = new XYY_Window(1920,1080, 3, 3);
 	XYY_SceneContent * sc_ = new XYY_SceneContent();
 	win_->getwindow();
 

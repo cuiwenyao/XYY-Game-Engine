@@ -14,8 +14,8 @@ XYY_Window::XYY_Window(unsigned int scr_windth, unsigned int scr_height, unsigne
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, gl_version_major);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, gl_version_minor);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-
-	this->window = glfwCreateWindow(scr_windth, scr_height, title.c_str(), NULL, NULL);
+	GLFWmonitor* isFullScreenMonitor = isFullScreen ? glfwGetPrimaryMonitor() : NULL;
+	this->window = glfwCreateWindow(scr_windth, scr_height, title.c_str(), glfwGetPrimaryMonitor(), NULL);
 	if (window == NULL)
 	{
 		std::cout << "Failed to create GLFW window" << std::endl;

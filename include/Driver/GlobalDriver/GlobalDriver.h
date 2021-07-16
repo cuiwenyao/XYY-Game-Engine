@@ -24,7 +24,7 @@
 		解决方案：1（采纳）、在匹配的全局驱动 和 局部驱动之间定义标识符 2、使用 对象类型识别函数
 */
 
-class   XYY_GlobalDriver : public XYY_Driver
+class __declspec(dllexport) XYY_GlobalDriver : public XYY_Driver
 {
 	public:
 		void init();						// 初始化

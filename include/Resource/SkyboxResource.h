@@ -4,7 +4,7 @@
 #include "./ShaderResource.h"
 
 
-class   XYY_SkyboxResource : XYY_Resource
+class __declspec(dllexport) XYY_SkyboxResource : XYY_Resource
 {
 public:
 	float skyboxVertices[18 * 6];

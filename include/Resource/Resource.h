@@ -14,7 +14,7 @@
 	Mesh    用到 Texture、Vecter（Vectex不在专门建立资源管理类，主要是一种数据结构）等 
 */
 
-class   XYY_Resource
+class __declspec(dllexport) XYY_Resource
 {
 public:
 	std::string path;	//  资源路径  
