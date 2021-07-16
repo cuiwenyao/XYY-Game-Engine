@@ -11,16 +11,19 @@ void XYY_GlobalIODriver::init(XYY_Window * win)
 	/*注册回调函数*/
 	//回调函数用在全局控制上面   日后写全局驱动的话，将全局的回调写上去。
 	//对于普通物体的IO控制，就不太需要回调函数了。
-	glfwSetFramebufferSizeCallback(win->getwindow(), window_framebuffer_size_callback );
+	//glfwSetFramebufferSizeCallback(win->getwindow(), window_framebuffer_size_callback );
 	//glfwSetCursorPosCallback(win->getwindow(), window_mouse_callback);
 	//glfwSetScrollCallback(win->getwindow(), window_scroll_callback);
 	//glfwSetMouseButtonCallback(win->getwindow(),window_mouse_button_callback);
 	glfwSetKeyCallback(win->getwindow(), window_key_callback);
 	//std::cout << "成功注册回调函数" << std::endl;
 
-
 	/* 初始化鼠标为第一次操作 */
 	firstMouse = true;
+
+	// game init
+	if (_initFunc) (*initFunc)();
+
 }
 
 void XYY_GlobalIODriver::run(XYY_SceneContent * sc,XYY_Window * win, XYY_GlobalSyncDriver * sync)
@@ -67,9 +70,22 @@ void XYY_GlobalIODriver::run(XYY_SceneContent * sc,XYY_Window * win, XYY_GlobalS
 	// 修改当前相机，后面可以改为调度全局IO控制
 	// std::cout << xoffset << ' ' << yoffset << std::endl;
 	sc->Cameras[0]->ProcessMouseMovement(xoffset, yoffset);
+
+	// game running
+	if (_runFunc) (*runFunc)(sc,win,sync);
 	
-	
-	
+}
+
+void XYY_GlobalIODriver::setInitFunc(void (*initFunc)())
+{
+	this->_initFunc = true;
+	this->initFunc = initFunc;
+}
+
+void XYY_GlobalIODriver::setRunFunc(void (*runFunc)(XYY_SceneContent* sc, XYY_Window* win, XYY_GlobalSyncDriver* sync))
+{
+	this->_runFunc = true;
+	this->runFunc = runFunc;
 }
 
 
@@ -82,7 +98,7 @@ void XYY_GlobalIODriver::window_seticon_callback(const std::string& iconpath)
 }
 void XYY_GlobalIODriver::window_framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
-	glViewport(0, 0, width, height);
+	// glViewport(0, 0, width, height);
 }
 
 void XYY_GlobalIODriver::window_mouse_callback(GLFWwindow* window, double xpos, double ypos)

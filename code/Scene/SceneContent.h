@@ -9,15 +9,17 @@
 // ... 各种元素在这里引入，在全局驱动中就可与被直接调用
 
 #include <Tinyxml/tinyxml.h>
+
 #include <vector>
 #include <string>
 #include <map>
+#include <unordered_map>
 
 /*
 写在这里：
 	场景内容中的一切元素，都以指针的形式存储，真正的实体由 引擎 动态分配。 （可以考虑实现一个专门用来管理资源的模块）
 */
-class __declspec(dllexport) XYY_SceneContent
+class  __declspec(dllexport) XYY_SceneContent
 {
 public:
 	// 为了提升 全局驱动 的调用速度 ， 将 灯光、普通物体与其他物体 分开放置
@@ -32,8 +34,16 @@ public:
 	XYY_SceneContent();
 //	void addElement(XYY_Element * ele);
 
-	bool loadXML(const char * path);
+	// XML文件 加载 与 保存
+	bool loadXML(const char * path, bool setloc = false, glm::vec3 base = glm::vec3(0, 0, 0));
 	bool saveXML(const char * path);
 
+	// ID库
+	XYY_Element * getEle(std::string id); // 查询ID
+
+
+private:
+	std::unordered_map<std::string, XYY_Element*> idmap;			// ID 库
+	void setEleID(XYY_Element * ele,std::string id);	// 设置ID
 
 };

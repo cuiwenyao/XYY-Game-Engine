@@ -1,10 +1,9 @@
 <scenecontent>
   <objects>
 
-    <model path="resources/objects/demo/zl/钟楼.obj" id="model1" >  </model>
+    <model path="resources/objects/fix/zhonglou.x3d" id="model1" >  </model>
     <object name="themodel" modelid="model1" scalex="0.1" scaley="0.1" scalez="0.1" positionx="0"></object>
 
-  
  <!--   <model path="resources/objects/spartan_armour_mkv_-_halo_reach/scene.gltf" id="model1" >  </model> -->
 
     <object name="themodel" modelid="model1" scalex="0.1" scaley="0.1" scalez="0.1" positionx="-40"></object>

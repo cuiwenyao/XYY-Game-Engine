@@ -5,12 +5,31 @@ XYY_SceneContent::XYY_SceneContent()
 	skybox = NULL;
 	return;
 }
+
+// 元素ID管理
+void XYY_SceneContent::setEleID(XYY_Element* ele, std::string id)
+{
+	idmap[id] = ele;
+	return;
+}
+
+XYY_Element* XYY_SceneContent::getEle(std::string id)
+{
+	if (idmap.find(id) == idmap.end())
+	{
+		std::cout << '*' << std::endl;
+		return NULL;
+	}
+	else return idmap[id];
+}
+
+
 /*
 XML场景解析模块待做：
 	2、更加完善的属性编辑
 	3、base 整体迁移 （ 多XMl文件引用 ）
 */
-bool XYY_SceneContent::loadXML(const char * path)
+bool XYY_SceneContent::XYY_SceneContent::loadXML(const char * path,bool setloc,glm::vec3 base )
 {
 	// XML文档
 	TiXmlDocument doc;
@@ -29,7 +48,6 @@ bool XYY_SceneContent::loadXML(const char * path)
 	}
 
 	// 建立默认 shader
-	//c++ 的目录以程序运行的目录问基准，即以项目配置文件所在位置为基准，所以main入口文件和start入口文件要保持同级目录。
 	XYY_ShaderResource * defaultobjectshader = new XYY_ShaderResource("include/GLSL/object.vert", "include/GLSL/object.frag");
 	XYY_ShaderResource * defaultskyboxshader = new XYY_ShaderResource("include/GLSL/skybox.vert", "include/GLSL/skybox.frag");
 
@@ -37,6 +55,9 @@ bool XYY_SceneContent::loadXML(const char * path)
 	std::map<std::string, XYY_ModelResource *> ModelMap;		// 模型复用
 	std::map<std::string, XYY_TextureResource *> TextureMap;	// 纹理复用
 	std::map<std::string, XYY_ShaderResource *> ShaderMap;		// Shader复用，暂未实现
+
+	// 多XML引入基准坐标
+	glm::vec3 bloc = setloc ? base : glm::vec3(0, 0, 0);
 
 	// 遍历子节点
 	for (TiXmlElement *elem = root->FirstChildElement(); elem != NULL; elem = elem->NextSiblingElement())
@@ -94,10 +115,8 @@ bool XYY_SceneContent::loadXML(const char * path)
 					if (sonele->Attribute("positionx")) px = true, posx = sonele->Attribute("positionx");// std::cout << "  " << "positionx:" << sonele->Attribute("positionx") << std::endl;
 					if (sonele->Attribute("positiony")) py = true, posy = sonele->Attribute("positiony");// std::cout << "  " << "positiony:" << sonele->Attribute("positiony") << std::endl;
 					if (sonele->Attribute("positionz")) pz = true, posz = sonele->Attribute("positionz");// std::cout << "  " << "positionz:" << sonele->Attribute("positionz") << std::endl;
-					if (px || py || pz)
-					{
-						obj->ld_rend->setposition( glm::vec3( atof( posx.c_str() ) , atof(posy.c_str()) , atof(posz.c_str()) ) );
-					}
+					
+					obj->ld_rend->setposition(bloc + glm::vec3( atof( posx.c_str() ) , atof(posy.c_str()) , atof(posz.c_str()) ) );
 
 					// scalex scaley scalez
 					std::string scalex = "1"; bool _scalex = false;
@@ -110,6 +129,12 @@ bool XYY_SceneContent::loadXML(const char * path)
 					{
 						obj->ld_rend->Stretch(glm::vec3(atof(scalex.c_str()), atof(scaley.c_str()), atof(scalez.c_str())));
 					}
+
+					// id
+					std::string id = "0"; bool _id = false;
+					if (sonele->Attribute("id")) _id = true, id = sonele->Attribute("id");
+					obj->id = id;
+					setEleID( obj , id );
 
 					Objects.push_back(obj);
 				}
@@ -142,10 +167,10 @@ bool XYY_SceneContent::loadXML(const char * path)
 					if (sonele->Attribute("positionx")) px = true, posx = sonele->Attribute("positionx");// std::cout << "  " << "positionx:" << sonele->Attribute("positionx") << std::endl;
 					if (sonele->Attribute("positiony")) py = true, posy = sonele->Attribute("positiony");// std::cout << "  " << "positiony:" << sonele->Attribute("positiony") << std::endl;
 					if (sonele->Attribute("positionz")) pz = true, posz = sonele->Attribute("positionz");// std::cout << "  " << "positionz:" << sonele->Attribute("positionz") << std::endl;
-					if (px || py || pz)
-					{
-						cube->ld_rend->setposition(glm::vec3(atof(posx.c_str()), atof(posy.c_str()), atof(posz.c_str())));
-					}
+					
+				//	std::cout << bloc.x << ',' << bloc.y << ',' << bloc.z << std::endl;
+					cube->ld_rend->setposition(bloc + glm::vec3(atof(posx.c_str()), atof(posy.c_str()), atof(posz.c_str())));
+					
 
 					// scalex scaley scalez
 					std::string scalex = "1"; bool _scalex = false;
@@ -187,6 +212,12 @@ bool XYY_SceneContent::loadXML(const char * path)
 						}
 					}
 
+					// id
+					std::string id = "0"; bool _id = false;
+					if (sonele->Attribute("id")) _id = true, id = sonele->Attribute("id");
+					cube->id = id;
+					setEleID(cube, id);
+
 					Objects.push_back(cube);
 				}
 			}
@@ -213,7 +244,7 @@ bool XYY_SceneContent::loadXML(const char * path)
 					if (lttype == "directional") light = new XYY_LightElement(0);
 					else if (lttype == "spot") light = new XYY_LightElement(2);
 					else light = new XYY_LightElement(1);
-					light->ld_light->position = glm::vec3(atof(ltposx.c_str()), atof(ltposy.c_str()), atof(ltposz.c_str()));
+					light->ld_light->position = bloc + glm::vec3(atof(ltposx.c_str()), atof(ltposy.c_str()), atof(ltposz.c_str()));
 
 
 					// colorr colorg colorb
@@ -227,6 +258,12 @@ bool XYY_SceneContent::loadXML(const char * path)
 					{
 						light->setcolor( glm::vec3(atof(colorr.c_str()), atof(colorg.c_str()), atof(colorb.c_str())) );
 					}
+
+					// id
+					std::string id = "0"; bool _id = false;
+					if (sonele->Attribute("id")) _id = true, id = sonele->Attribute("id");
+					light->id = id;
+					setEleID(light, id);
 
 					Lights.push_back(light);
 				}
@@ -242,18 +279,20 @@ bool XYY_SceneContent::loadXML(const char * path)
 					// positionx positiony positionz yaw pitch
 					std::string yaw = "0";		bool _yaw   = false;
 					std::string pitch = "0";	bool _pitch = false;
-					std::string posx = "0";		bool _posx = false;
-					std::string posy = "0";		bool _posy = false;
-					std::string posz = "0";		bool _posz = false;
+					std::string posx = "10";		bool _posx = false;
+					std::string posy = "10";		bool _posy = false;
+					std::string posz = "10";		bool _posz = false;
 					if (sonele->Attribute("positionx")) _posx = true , posx = sonele->Attribute("positionx");
 					if (sonele->Attribute("positiony")) _posy = true , posy = sonele->Attribute("positiony");
 					if (sonele->Attribute("positionz")) _posz = true , posz = sonele->Attribute("positionz");
 					if (sonele->Attribute("yaw")) _yaw = true, yaw = sonele->Attribute("yaw");
 					if (sonele->Attribute("pitch")) _pitch = true, pitch = sonele->Attribute("pitch");
 					XYY_CameraElement * cra = new XYY_CameraElement();
-					if (_posx || _posy || _posz) cra->position = glm::vec3(atof(posx.c_str()), atof(posy.c_str()), atof(posz.c_str()));
+					cra->position = bloc + glm::vec3(atof(posx.c_str()), atof(posy.c_str()), atof(posz.c_str()));
 					if(_yaw) cra->Yaw = atof(yaw.c_str());
 					if (_pitch) cra->Pitch = atof(pitch.c_str());
+
+					Cameras.push_back(cra);
 				
 
 					// use
@@ -264,6 +303,11 @@ bool XYY_SceneContent::loadXML(const char * path)
 						std::swap( Cameras[Cameras.size() - 1], Cameras[0] );
 					}
 
+					// id
+					std::string id = "0"; bool _id = false;
+					if (sonele->Attribute("id")) _id = true, id = sonele->Attribute("id");
+					cra->id = id;
+					setEleID(cra, id);
 
 				}
 			}
@@ -276,8 +320,32 @@ bool XYY_SceneContent::loadXML(const char * path)
 			if (!path) continue;
 			XYY_SkyboxElement * skybx = new XYY_SkyboxElement(skypath, defaultskyboxshader);
 			skybox = skybx;
-		}
 
+			// id
+			std::string id = "0"; bool _id = false;
+			if (elem->Attribute("id")) _id = true, id = elem->Attribute("id");
+			skybx->id = id;
+			setEleID(skybx, id);
+		}
+		else if (elemName == "scxml")
+		{
+			// basex basey basez
+			std::string basex = "0", basey = "0", basez = "0";
+			bool _basex = false, _basey = false, _basez = false;
+			if (elem->Attribute("basex")) _basex = true, basex = elem->Attribute("basex");
+			if (elem->Attribute("basey")) _basey = true, basey = elem->Attribute("basey");
+			if (elem->Attribute("basez")) _basez = true, basez = elem->Attribute("basez");
+
+			// path
+			std::string path; bool _path = false;
+			if (elem->Attribute("path")) _path = true, path = elem->Attribute("path");
+
+			if (!_path) continue;
+
+			/* 支持 多层XML引入 */
+			loadXML( path.c_str() , true , bloc + glm::vec3( atof(basex.c_str()) , atof(basey.c_str()) , atof(basez.c_str()) ) );
+		
+		}
 	}
 	// 清理内存
 	doc.Clear();

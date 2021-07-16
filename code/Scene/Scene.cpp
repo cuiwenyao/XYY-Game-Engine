@@ -44,7 +44,7 @@ void XYY_Scene::run()
 	gd_sync->init();
 	gd_io->init(win);
 	gd_lightrend->init();
-	gd_logic->init();
+	gd_logic->init(sc);
 	gd_debugout->init();
 
 	while ( !glfwWindowShouldClose( win->getwindow() ) )
