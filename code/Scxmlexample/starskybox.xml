@@ -1,0 +1,497 @@
+<scenecontent>
+  <objects>
+
+    <model path="resources/objects/test/star_ship/scene.gltf" id="model1" >  </model>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-200"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-200" positiony="-200"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-200" positiony="-180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-200" positiony="-160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-200" positiony="-140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-200" positiony="-120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-200" positiony="-100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-200" positiony="-80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-200" positiony="-60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-200" positiony="-40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-200" positiony="-20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-200" positiony="0"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-200" positiony="20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-200" positiony="40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-200" positiony="60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-200" positiony="80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-200" positiony="100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-200" positiony="120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-200" positiony="140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-200" positiony="160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-200" positiony="180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-200" positiony="200"></object>
+    
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-180" positiony="-200"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-180" positiony="-180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-180" positiony="-160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-180" positiony="-140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-180" positiony="-120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-180" positiony="-100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-180" positiony="-80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-180" positiony="-60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-180" positiony="-40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-180" positiony="-20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-180" positiony="0"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-180" positiony="20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-180" positiony="40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-180" positiony="60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-180" positiony="80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-180" positiony="100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-180" positiony="120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-180" positiony="140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-180" positiony="160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-180" positiony="180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-180" positiony="200"></object>
+    
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-160" positiony="-200"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-160" positiony="-180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-160" positiony="-160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-160" positiony="-140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-160" positiony="-120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-160" positiony="-100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-160" positiony="-80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-160" positiony="-60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-160" positiony="-40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-160" positiony="-20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-160" positiony="0"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-160" positiony="20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-160" positiony="40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-160" positiony="60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-160" positiony="80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-160" positiony="100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-160" positiony="120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-160" positiony="140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-160" positiony="160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-160" positiony="180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-160" positiony="200"></object>
+    
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-140" positiony="-200"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-140" positiony="-180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-140" positiony="-160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-140" positiony="-140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-140" positiony="-120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-140" positiony="-100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-140" positiony="-80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-140" positiony="-60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-140" positiony="-40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-140" positiony="-20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-140" positiony="0"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-140" positiony="20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-140" positiony="40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-140" positiony="60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-140" positiony="80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-140" positiony="100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-140" positiony="120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-140" positiony="140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-140" positiony="160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-140" positiony="180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-140" positiony="200"></object>
+    
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-120" positiony="-200"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-120" positiony="-180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-120" positiony="-160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-120" positiony="-140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-120" positiony="-120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-120" positiony="-100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-120" positiony="-80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-120" positiony="-60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-120" positiony="-40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-120" positiony="-20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-120" positiony="0"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-120" positiony="20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-120" positiony="40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-120" positiony="60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-120" positiony="80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-120" positiony="100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-120" positiony="120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-120" positiony="140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-120" positiony="160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-120" positiony="180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-120" positiony="200"></object>
+    
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-100" positiony="-200"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-100" positiony="-180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-100" positiony="-160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-100" positiony="-140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-100" positiony="-120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-100" positiony="-100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-100" positiony="-80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-100" positiony="-60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-100" positiony="-40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-100" positiony="-20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-100" positiony="0"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-100" positiony="20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-100" positiony="40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-100" positiony="60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-100" positiony="80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-100" positiony="100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-100" positiony="120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-100" positiony="140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-100" positiony="160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-100" positiony="180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-100" positiony="200"></object>
+    
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-80" positiony="-200"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-80" positiony="-180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-80" positiony="-160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-80" positiony="-140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-80" positiony="-120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-80" positiony="-100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-80" positiony="-80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-80" positiony="-60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-80" positiony="-40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-80" positiony="-20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-80" positiony="0"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-80" positiony="20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-80" positiony="40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-80" positiony="60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-80" positiony="80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-80" positiony="100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-80" positiony="120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-80" positiony="140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-80" positiony="160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-80" positiony="180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-80" positiony="200"></object>
+    
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-60" positiony="-200"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-60" positiony="-180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-60" positiony="-160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-60" positiony="-140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-60" positiony="-120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-60" positiony="-100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-60" positiony="-80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-60" positiony="-60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-60" positiony="-40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-60" positiony="-20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-60" positiony="0"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-60" positiony="20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-60" positiony="40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-60" positiony="60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-60" positiony="80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-60" positiony="100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-60" positiony="120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-60" positiony="140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-60" positiony="160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-60" positiony="180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-60" positiony="200"></object>
+    
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-40" positiony="-200"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-40" positiony="-180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-40" positiony="-160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-40" positiony="-140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-40" positiony="-120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-40" positiony="-100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-40" positiony="-80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-40" positiony="-60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-40" positiony="-40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-40" positiony="-20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-40" positiony="0"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-40" positiony="20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-40" positiony="40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-40" positiony="60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-40" positiony="80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-40" positiony="100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-40" positiony="120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-40" positiony="140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-40" positiony="160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-40" positiony="180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-40" positiony="200"></object>
+    
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-20" positiony="-200"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-20" positiony="-180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-20" positiony="-160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-20" positiony="-140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-20" positiony="-120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-20" positiony="-100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-20" positiony="-80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-20" positiony="-60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-20" positiony="-40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-20" positiony="-20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-20" positiony="0"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-20" positiony="20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-20" positiony="40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-20" positiony="60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-20" positiony="80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-20" positiony="100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-20" positiony="120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-20" positiony="140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-20" positiony="160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-20" positiony="180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="-20" positiony="200"></object>
+    
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="0"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="0" positiony="-200"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="0" positiony="-180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="0" positiony="-160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="0" positiony="-140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="0" positiony="-120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="0" positiony="-100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="0" positiony="-80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="0" positiony="-60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="0" positiony="-40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="0" positiony="-20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="0" positiony="0"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="0" positiony="20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="0" positiony="40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="0" positiony="60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="0" positiony="80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="0" positiony="100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="0" positiony="120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="0" positiony="140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="0" positiony="160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="0" positiony="180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="0" positiony="200"></object>
+
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="200"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="200" positiony="-200"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="200" positiony="-180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="200" positiony="-160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="200" positiony="-140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="200" positiony="-120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="200" positiony="-100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="200" positiony="-80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="200" positiony="-60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="200" positiony="-40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="200" positiony="-20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="200" positiony="0"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="200" positiony="20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="200" positiony="40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="200" positiony="60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="200" positiony="80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="200" positiony="100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="200" positiony="120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="200" positiony="140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="200" positiony="160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="200" positiony="180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="200" positiony="200"></object>
+
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="180" positiony="-200"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="180" positiony="-180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="180" positiony="-160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="180" positiony="-140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="180" positiony="-120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="180" positiony="-100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="180" positiony="-80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="180" positiony="-60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="180" positiony="-40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="180" positiony="-20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="180" positiony="0"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="180" positiony="20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="180" positiony="40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="180" positiony="60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="180" positiony="80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="180" positiony="100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="180" positiony="120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="180" positiony="140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="180" positiony="160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="180" positiony="180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="180" positiony="200"></object>
+
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="160" positiony="-200"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="160" positiony="-180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="160" positiony="-160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="160" positiony="-140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="160" positiony="-120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="160" positiony="-100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="160" positiony="-80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="160" positiony="-60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="160" positiony="-40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="160" positiony="-20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="160" positiony="0"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="160" positiony="20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="160" positiony="40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="160" positiony="60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="160" positiony="80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="160" positiony="100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="160" positiony="120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="160" positiony="140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="160" positiony="160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="160" positiony="180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="160" positiony="200"></object>
+
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="140" positiony="-200"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="140" positiony="-180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="140" positiony="-160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="140" positiony="-140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="140" positiony="-120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="140" positiony="-100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="140" positiony="-80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="140" positiony="-60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="140" positiony="-40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="140" positiony="-20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="140" positiony="0"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="140" positiony="20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="140" positiony="40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="140" positiony="60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="140" positiony="80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="140" positiony="100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="140" positiony="120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="140" positiony="140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="140" positiony="160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="140" positiony="180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="140" positiony="200"></object>
+
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="120" positiony="-200"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="120" positiony="-180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="120" positiony="-160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="120" positiony="-140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="120" positiony="-120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="120" positiony="-100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="120" positiony="-80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="120" positiony="-60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="120" positiony="-40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="120" positiony="-20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="120" positiony="0"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="120" positiony="20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="120" positiony="40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="120" positiony="60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="120" positiony="80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="120" positiony="100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="120" positiony="120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="120" positiony="140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="120" positiony="160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="120" positiony="180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="120" positiony="200"></object>
+
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="100" positiony="-200"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="100" positiony="-180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="100" positiony="-160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="100" positiony="-140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="100" positiony="-120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="100" positiony="-100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="100" positiony="-80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="100" positiony="-60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="100" positiony="-40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="100" positiony="-20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="100" positiony="0"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="100" positiony="20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="100" positiony="40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="100" positiony="60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="100" positiony="80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="100" positiony="100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="100" positiony="120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="100" positiony="140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="100" positiony="160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="100" positiony="180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="100" positiony="200"></object>
+
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="80" positiony="-200"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="80" positiony="-180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="80" positiony="-160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="80" positiony="-140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="80" positiony="-120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="80" positiony="-100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="80" positiony="-80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="80" positiony="-60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="80" positiony="-40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="80" positiony="-20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="80" positiony="0"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="80" positiony="20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="80" positiony="40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="80" positiony="60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="80" positiony="80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="80" positiony="100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="80" positiony="120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="80" positiony="140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="80" positiony="160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="80" positiony="180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="80" positiony="200"></object>
+
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="60" positiony="-200"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="60" positiony="-180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="60" positiony="-160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="60" positiony="-140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="60" positiony="-120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="60" positiony="-100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="60" positiony="-80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="60" positiony="-60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="60" positiony="-40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="60" positiony="-20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="60" positiony="0"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="60" positiony="20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="60" positiony="40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="60" positiony="60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="60" positiony="80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="60" positiony="100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="60" positiony="120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="60" positiony="140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="60" positiony="160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="60" positiony="180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="60" positiony="200"></object>
+
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="40" positiony="-200"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="40" positiony="-180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="40" positiony="-160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="40" positiony="-140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="40" positiony="-120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="40" positiony="-100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="40" positiony="-80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="40" positiony="-60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="40" positiony="-40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="40" positiony="-20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="40" positiony="0"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="40" positiony="20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="40" positiony="40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="40" positiony="60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="40" positiony="80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="40" positiony="100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="40" positiony="120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="40" positiony="140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="40" positiony="160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="40" positiony="180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="40" positiony="200"></object>
+
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="20" positiony="-200"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="20" positiony="-180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="20" positiony="-160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="20" positiony="-140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="20" positiony="-120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="20" positiony="-100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="20" positiony="-80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="20" positiony="-60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="20" positiony="-40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="20" positiony="-20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="20" positiony="0"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="20" positiony="20"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="20" positiony="40"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="20" positiony="60"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="20" positiony="80"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="20" positiony="100"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="20" positiony="120"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="20" positiony="140"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="20" positiony="160"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="20" positiony="180"></object>
+    <object name="themodel" modelid="model1" scalex="0.01" scaley="0.01" scalez="0.01" positionx="20" positiony="200"></object>
+    
+  </objects>
+
+
+  <lights>
+    <light type="spot"></light>
+  </lights>
+
+  <skybox path="resources/textures/skybox"></skybox>
+
+</scenecontent>

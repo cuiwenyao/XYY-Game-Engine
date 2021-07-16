@@ -1,0 +1,19 @@
+<scenecontent>
+  <objects>
+
+    <model path="resources/objects/test/star_ship/scene.gltf" id="model1" >  </model>
+    <object name="themodel" modelid="model1" scalex="1" scaley="1" scalez="1" positionx="-40"></object>
+    <object name="themodel" modelid="model1" scalex="1" scaley="1" scalez="1" positionx="-20"></object>
+    <object name="themodel" modelid="model1" scalex="1" scaley="1" scalez="1" positionx="0"></object>
+    <object name="themodel" modelid="model1" scalex="1" scaley="1" scalez="1" positionx="20"></object>
+    <object name="themodel" modelid="model1" scalex="1" scaley="1" scalez="1" positionx="40"></object>
+  </objects>
+
+ 
+  <lights>
+    <light type="spot"></light>
+  </lights>
+  
+  <skybox path="resources/textures/skybox"></skybox>
+
+</scenecontent>

@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/ -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
+        
+      <meta name="description" content="Hello, here is wenyao&#39;s space, how do you come in???">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <title>git的使用 |  这里是文耀的space</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="https://myblog.cuimouren.cn/favicon.ico">
+       
+<link rel="stylesheet" href="./这里是文耀的space_files/main.css">
+
+      <link rel="stylesheet" href="./这里是文耀的space_files/remixicon.min.css">
+      
+<link rel="stylesheet" href="./这里是文耀的space_files/custom.css">
+ 
+      <script type="text/javascript" charset="UTF-8" async="" src="./这里是文耀的space_files/js-sdk-pro.min.js.下载" id="LA_COLLECT"></script><script src="./这里是文耀的space_files/pace.min.js.下载"></script>
+       
+ 
+
+      <!-- mermaid -->
+      
+    <link rel="alternate" href="https://myblog.cuimouren.cn/atom.xml" title="这里是文耀的space" type="application/atom+xml">
+<style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style></head>
+  <body class=" pace-done" style=""><div id="MathJax_Message" style="display: none;"></div><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+
+
+
+
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  <article id="post-git的使用" class="article article-type-post" itemscope="" itemprop="blogPost" data-scroll-reveal="">
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  git的使用
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/" class="article-date">
+  <time datetime="2021-03-23T13:04:12.000Z" itemprop="datePublished">2021-03-23</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="https://myblog.cuimouren.cn/categories/%E4%BD%BF%E7%94%A8/">使用</a> / <a class="article-category-link" href="https://myblog.cuimouren.cn/categories/%E4%BD%BF%E7%94%A8/git/">git</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">1.5k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">6 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot is-position-fixed"><ol class="toc-list "><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#git%E7%9A%84%E4%BD%BF%E7%94%A8" class="toc-link node-name--H1 ">git的使用</a><ol class="toc-list  is-collapsible"><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%88%9B%E5%BB%BAgit%E5%BA%93" class="toc-link node-name--H2 ">创建git库</a><ol class="toc-list  is-collapsible"><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%88%9D%E5%A7%8B%E5%8C%96git" class="toc-link node-name--H4 ">初始化git</a><ol class="toc-list  is-collapsible"><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%B0%86%E8%A6%81%E6%B7%BB%E5%8A%A0%E7%9A%84%E6%96%87%E4%BB%B6%E5%8A%A0%E5%85%A5git%E7%AE%A1%E7%90%86" class="toc-link node-name--H4 ">将要添加的文件加入git管理</a></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%89%80%E8%A6%81%E6%B7%BB%E5%8A%A0%E7%9A%84%E6%96%87%E4%BB%B6" class="toc-link node-name--H4 ">自定义所要添加的文件</a></li><li class="toc-list-item is-active-li"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%8F%90%E4%BA%A4%E5%88%B0%E4%BB%93%E5%BA%93" class="toc-link node-name--H4  is-active-link">提交到仓库</a></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%9F%A5%E7%9C%8B%E4%BB%93%E5%BA%93%E7%8A%B6%E6%80%81" class="toc-link node-name--H4 ">查看仓库状态</a></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E6%9B%B4%E6%94%B9%E6%83%85%E5%86%B5" class="toc-link node-name--H4 ">查看文件更改情况</a></li></ol></li></ol></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86" class="toc-link node-name--H2 ">版本管理</a><ol class="toc-list  is-collapsible is-collapsed"><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80" class="toc-link node-name--H4 ">版本回退</a><ol class="toc-list  is-collapsible is-collapsed"><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%92%A4%E9%94%80%E4%BF%AE%E6%94%B9" class="toc-link node-name--H4 ">撤销修改</a></li></ol></li></ol></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93" class="toc-link node-name--H2 ">远程仓库</a><ol class="toc-list  is-collapsible is-collapsed"><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%88%9B%E5%BB%BAssh-key" class="toc-link node-name--H4 ">创建ssh key</a><ol class="toc-list  is-collapsible is-collapsed"><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%B7%BB%E5%8A%A0%E8%BF%9C%E7%A8%8B%E5%BA%93" class="toc-link node-name--H4 ">添加远程库</a></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%9F%A5%E7%9C%8B%E6%9C%AC%E5%9C%B0%E6%89%80%E6%9C%89%E4%BB%93%E5%BA%93" class="toc-link node-name--H4 ">查看本地所有仓库</a></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E5%BA%93" class="toc-link node-name--H4 ">推送到远程库</a></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%88%A0%E9%99%A4%E8%BF%9C%E7%A8%8B%E5%BA%93" class="toc-link node-name--H4 ">删除远程库</a></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%85%8B%E9%9A%86%E5%BA%93" class="toc-link node-name--H4 ">克隆库</a></li></ol></li></ol></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86" class="toc-link node-name--H2 ">分支管理</a><ol class="toc-list  is-collapsible is-collapsed"><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%BB%BA%E7%AB%8B%E6%96%B0%E7%9A%84%E5%88%86%E6%94%AF" class="toc-link node-name--H4 ">建立新的分支</a><ol class="toc-list  is-collapsible is-collapsed"><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E5%88%86%E6%94%AF" class="toc-link node-name--H4 ">查看所有分支</a></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%88%87%E6%8D%A2%E5%88%86%E6%94%AF" class="toc-link node-name--H4 ">切换分支</a></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%88%9B%E5%BB%BA%E5%B9%B6%E5%88%87%E6%8D%A2%E5%88%86%E6%94%AF" class="toc-link node-name--H4 ">创建并切换分支</a></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF%E5%88%B0%E5%BD%93%E5%89%8D%E5%88%86%E6%94%AF" class="toc-link node-name--H4 ">合并分支到当前分支</a></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%88%A0%E9%99%A4%E5%88%86%E6%94%AF" class="toc-link node-name--H4 ">删除分支</a></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%90%88%E5%B9%B6%E5%86%B2%E7%AA%81" class="toc-link node-name--H4 ">合并冲突</a></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%9F%A5%E7%9C%8B%E5%88%86%E6%94%AF%E5%90%88%E5%B9%B6%E5%9B%BE" class="toc-link node-name--H4 ">查看分支合并图</a></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86%E7%AD%96%E7%95%A5" class="toc-link node-name--H4 ">分支管理策略</a></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E4%BF%AE%E5%A4%8Dmain%E5%88%86%E6%94%AF%E4%B8%8A%E7%9A%84bug%E6%B5%81%E7%A8%8B" class="toc-link node-name--H4 ">修复main分支上的bug流程</a></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%A4%9A%E4%BA%BA%E5%90%88%E4%BD%9C%E5%86%B2%E7%AA%81" class="toc-link node-name--H4 ">多人合作冲突</a></li></ol></li></ol></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%A0%87%E7%AD%BE" class="toc-link node-name--H2 ">标签</a><ol class="toc-list  is-collapsible is-collapsed"><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE" class="toc-link node-name--H4 ">创建标签</a><ol class="toc-list  is-collapsible is-collapsed"><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%88%A0%E9%99%A4%E6%A0%87%E7%AD%BE" class="toc-link node-name--H4 ">删除标签</a></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#" class="toc-link node-name--H4 "></a></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%88%A0%E9%99%A4%E8%BF%9C%E7%A8%8B%E6%A0%87%E7%AD%BE" class="toc-link node-name--H4 ">删除远程标签</a></li></ol></li></ol></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#git%E6%8A%A5%E9%94%99" class="toc-link node-name--H2 ">git报错</a><ol class="toc-list  is-collapsible is-collapsed"><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#refusing-to-merge-unrelated-histories" class="toc-link node-name--H4 ">refusing to merge unrelated histories</a><ol class="toc-list  is-collapsible is-collapsed"><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%8F%8F%E8%BF%B0" class="toc-link node-name--H4 ">描述</a></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%8E%9F%E5%9B%A0" class="toc-link node-name--H4 ">原因</a></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E8%A7%A3%E5%86%B3" class="toc-link node-name--H4 ">解决</a></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%8E%A5%E7%9D%80%E8%A7%A3%E5%86%B3%E5%86%B2%E7%AA%81%E7%84%B6%E5%90%8E-push%E5%8D%B3%E5%8F%AF" class="toc-link node-name--H4 ">接着解决冲突然后 push即可</a></li></ol></li></ol></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%A4%9A%E4%BB%93%E5%BA%93-multiple-ssh-keys-on-one-computer" class="toc-link node-name--H2 ">多仓库 multiple ssh keys on one computer</a><ol class="toc-list  is-collapsible is-collapsed"><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%AD%A5%E9%AA%A4" class="toc-link node-name--H4 ">步骤</a><ol class="toc-list  is-collapsible is-collapsed"><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%8E%9F%E7%90%86" class="toc-link node-name--H4 ">原理</a></li><li class="toc-list-item"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%8F%82%E8%80%83" class="toc-link node-name--H4 ">参考</a></li></ol></li></ol></li></ol></li></ol></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="git的使用"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#git%E7%9A%84%E4%BD%BF%E7%94%A8" class="headerlink" title="git的使用"></a>git的使用</h1><p><a target="_blank" rel="noopener" href="https://www.runoob.com/w3cnote/git-guide.html">菜鸟教程</a></p>
+<h2 id="创建git库"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%88%9B%E5%BB%BAgit%E5%BA%93" class="headerlink" title="创建git库"></a>创建git库</h2><h4 id="初始化git"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%88%9D%E5%A7%8B%E5%8C%96git" class="headerlink" title="初始化git"></a>初始化git</h4><figure class="highlight dos"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line"><span class="built_in">mkdir</span> gittest</span><br><span class="line"><span class="built_in">cd</span> gittest</span><br><span class="line">git init</span><br></pre></td></tr></tbody></table></figure>
+<h4 id="将要添加的文件加入git管理"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%B0%86%E8%A6%81%E6%B7%BB%E5%8A%A0%E7%9A%84%E6%96%87%E4%BB%B6%E5%8A%A0%E5%85%A5git%E7%AE%A1%E7%90%86" class="headerlink" title="将要添加的文件加入git管理"></a>将要添加的文件加入git管理</h4><p>  <strong>add 从工作区到暂存区</strong> </p>
+<figure class="highlight routeros"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">git <span class="builtin-name">add</span> [filename]</span><br></pre></td></tr></tbody></table></figure>
+<p>或者将目录下所有文件都加入</p>
+<figure class="highlight routeros"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">git <span class="builtin-name">add</span> .</span><br></pre></td></tr></tbody></table></figure>
+<h4 id="自定义所要添加的文件"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E8%87%AA%E5%AE%9A%E4%B9%89%E6%89%80%E8%A6%81%E6%B7%BB%E5%8A%A0%E7%9A%84%E6%96%87%E4%BB%B6" class="headerlink" title="自定义所要添加的文件"></a>自定义所要添加的文件</h4><p>总是手动add每一个太麻烦了，但总有些不希望添加进去的，可以这样。</p>
+<ul>
+<li>创建一个文件名为的文件<blockquote>
+<p>.gitignore</p>
+</blockquote>
+</li>
+<li>文件内容为<figure class="highlight diff"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">file</span><br><span class="line">.*</span><br><span class="line"><span class="addition">!.gitignore</span></span><br><span class="line"><span class="addition">!file1</span></span><br></pre></td></tr></tbody></table></figure></li>
+<li>这表示名为file的文件要加进去</li>
+<li>所有文件都要加进去</li>
+<li>忽略 .gitignore</li>
+<li>忽略 file1</li>
+</ul>
+<h4 id="提交到仓库"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%8F%90%E4%BA%A4%E5%88%B0%E4%BB%93%E5%BA%93" class="headerlink" title="提交到仓库"></a>提交到仓库</h4><p><strong>commit 将暂存区提交到仓库</strong></p>
+<figure class="highlight apache"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line"><span class="attribute">git</span> commit -m<span class="meta"> [提交描述]</span></span><br></pre></td></tr></tbody></table></figure>
+<p> <strong>每次commit之前都要add所要进行管理的文件</strong> </p>
+<h4 id="查看仓库状态"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%9F%A5%E7%9C%8B%E4%BB%93%E5%BA%93%E7%8A%B6%E6%80%81" class="headerlink" title="查看仓库状态"></a>查看仓库状态</h4><figure class="highlight fortran"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">git <span class="keyword">status</span></span><br><span class="line">简略版</span><br><span class="line">git <span class="keyword">status</span> -s</span><br></pre></td></tr></tbody></table></figure>
+<h4 id="查看文件更改情况"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E6%9B%B4%E6%94%B9%E6%83%85%E5%86%B5" class="headerlink" title="查看文件更改情况"></a>查看文件更改情况</h4><figure class="highlight apache"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line"><span class="attribute">git</span> diff<span class="meta"> [filename]</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="版本管理"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86" class="headerlink" title="版本管理"></a>版本管理</h2><h4 id="版本回退"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80" class="headerlink" title="版本回退"></a>版本回退</h4><p><strong>在commit之后后悔了</strong></p>
+<figure class="highlight 1c"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">git <span class="built_in">log</span> </span><br><span class="line">git <span class="built_in">log</span> --oneline <span class="comment">//简略版</span></span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li><p>使用git log 查看之前提交的记录，记下回退的版本号commit id 输入</p>
+<figure class="highlight pgsql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">git <span class="keyword">reset</span> <span class="comment">--hard [commit id]</span></span><br></pre></td></tr></tbody></table></figure></li>
+<li><p><strong>注意只有在head指向的版本之前的,</strong> 切换版本到当前版本之后的 输入</p>
+<figure class="highlight angelscript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">git <span class="built_in">ref</span>log</span><br></pre></td></tr></tbody></table></figure>
+<h4 id="撤销修改"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%92%A4%E9%94%80%E4%BF%AE%E6%94%B9" class="headerlink" title="撤销修改"></a>撤销修改</h4></li>
+<li><p>丢弃对工作区的修改 add之前</p>
+<figure class="highlight ada"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">git checkout <span class="comment">-- [filename]</span></span><br></pre></td></tr></tbody></table></figure></li>
+<li><p><em>checkout就是用版本库里的版本替换工作区的版本</em>*</p>
+</li>
+<li><p>丢弃对暂存区的修改 add之后 commit之前</p>
+<figure class="highlight sas"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">git <span class="meta">reset</span> HEAD [<span class="meta">filename</span>]</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="远程仓库"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93" class="headerlink" title="远程仓库"></a>远程仓库</h2><h4 id="创建ssh-key"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%88%9B%E5%BB%BAssh-key" class="headerlink" title="创建ssh key"></a>创建ssh key</h4><figure class="highlight excel"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">ssh-keygen -<span class="built_in">t</span> rsa -C <span class="string">"myemail@163.com"</span></span><br></pre></td></tr></tbody></table></figure>
+<p>在用户目录里找到id_rsa.pub,将里面的数据复制到GitHub中,这样就可以从本地电脑推送到GitHub中了.</p>
+<h4 id="添加远程库"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%B7%BB%E5%8A%A0%E8%BF%9C%E7%A8%8B%E5%BA%93" class="headerlink" title="添加远程库"></a>添加远程库</h4><figure class="highlight llvm"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">git remote <span class="keyword">add</span> repo<span class="number">1</span> git<span class="title">@github.com</span>:yishuilingbo/gittest.git</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+<h4 id="查看本地所有仓库"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%9F%A5%E7%9C%8B%E6%9C%AC%E5%9C%B0%E6%89%80%E6%9C%89%E4%BB%93%E5%BA%93" class="headerlink" title="查看本地所有仓库"></a>查看本地所有仓库</h4><figure class="highlight ebnf"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line"><span class="attribute">git remote -v</span></span><br></pre></td></tr></tbody></table></figure>
+<h4 id="推送到远程库"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E5%BA%93" class="headerlink" title="推送到远程库"></a>推送到远程库</h4><figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">git push -u <span class="selector-attr">[库名]</span> <span class="selector-attr">[分支名]</span></span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>加上了-u参数，Git不但会把本地的分支内容推送的远程新的分支，还会把本地的分支和远程的分支关联起来，在以后的推送或者拉取时就可以简化命令。</p>
+<h4 id="删除远程库"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%88%A0%E9%99%A4%E8%BF%9C%E7%A8%8B%E5%BA%93" class="headerlink" title="删除远程库"></a>删除远程库</h4><figure class="highlight apache"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line"><span class="attribute">git</span> remote rm<span class="meta"> [库名]</span></span><br></pre></td></tr></tbody></table></figure>
+<h4 id="克隆库"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%85%8B%E9%9A%86%E5%BA%93" class="headerlink" title="克隆库"></a>克隆库</h4><figure class="highlight crmsh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">git <span class="keyword">clone</span> <span class="title">git</span>@github.com:yishuilingbo/gittest.git</span><br><span class="line">cd [库名]</span><br></pre></td></tr></tbody></table></figure></li>
+</ul>
+<h2 id="分支管理"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86" class="headerlink" title="分支管理"></a>分支管理</h2><h4 id="建立新的分支"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%BB%BA%E7%AB%8B%E6%96%B0%E7%9A%84%E5%88%86%E6%94%AF" class="headerlink" title="建立新的分支"></a>建立新的分支</h4><figure class="highlight mipsasm"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">git <span class="keyword">branch </span>[<span class="keyword">branchname]</span></span><br><span class="line"><span class="keyword"></span></span><br></pre></td></tr></tbody></table></figure>
+<h4 id="查看所有分支"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E5%88%86%E6%94%AF" class="headerlink" title="查看所有分支"></a>查看所有分支</h4><figure class="highlight ebnf"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line"><span class="attribute">git branch</span></span><br></pre></td></tr></tbody></table></figure>
+<h4 id="切换分支"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%88%87%E6%8D%A2%E5%88%86%E6%94%AF" class="headerlink" title="切换分支"></a>切换分支</h4><figure class="highlight mipsasm"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">git <span class="keyword">switch </span><span class="keyword">branch </span>[<span class="keyword">branchname]</span></span><br></pre></td></tr></tbody></table></figure>
+<h4 id="创建并切换分支"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%88%9B%E5%BB%BA%E5%B9%B6%E5%88%87%E6%8D%A2%E5%88%86%E6%94%AF" class="headerlink" title="创建并切换分支"></a>创建并切换分支</h4><figure class="highlight llvm"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">git <span class="keyword">switch</span> -<span class="keyword">c</span> [branchname]</span><br></pre></td></tr></tbody></table></figure>
+<h4 id="合并分支到当前分支"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%90%88%E5%B9%B6%E5%88%86%E6%94%AF%E5%88%B0%E5%BD%93%E5%89%8D%E5%88%86%E6%94%AF" class="headerlink" title="合并分支到当前分支"></a>合并分支到当前分支</h4><figure class="highlight apache"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line"><span class="attribute">git</span> merge<span class="meta"> [来源分支名]</span></span><br></pre></td></tr></tbody></table></figure>
+<h4 id="删除分支"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%88%A0%E9%99%A4%E5%88%86%E6%94%AF" class="headerlink" title="删除分支"></a>删除分支</h4><figure class="highlight apache"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line"><span class="attribute">git</span> branch -d<span class="meta"> [branchname]</span></span><br></pre></td></tr></tbody></table></figure>
+<ul>
+<li>若该分支没有被合并过，以下强制删除<figure class="highlight apache"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line"><span class="attribute">git</span> branch -D<span class="meta"> [branchname]</span></span><br></pre></td></tr></tbody></table></figure>
+<h4 id="合并冲突"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%90%88%E5%B9%B6%E5%86%B2%E7%AA%81" class="headerlink" title="合并冲突"></a>合并冲突</h4></li>
+<li>当两个不同的分支对同一对象进行修改并提交之后会发生 merge conflict<br>此时需要查看冲突文件手动解决冲突。<h4 id="查看分支合并图"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%9F%A5%E7%9C%8B%E5%88%86%E6%94%AF%E5%90%88%E5%B9%B6%E5%9B%BE" class="headerlink" title="查看分支合并图"></a>查看分支合并图</h4><figure class="highlight applescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">git <span class="built_in">log</span> <span class="comment">--graph</span></span><br></pre></td></tr></tbody></table></figure>
+简洁版<figure class="highlight applescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">git <span class="built_in">log</span> <span class="comment">--graph --pretty=oneline --abbrev-commit</span></span><br></pre></td></tr></tbody></table></figure>
+<h4 id="分支管理策略"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86%E7%AD%96%E7%95%A5" class="headerlink" title="分支管理策略"></a>分支管理策略</h4>通常合并分支的时候，git会采用<strong>fast forward</strong>模式。这种模式下，git只是把分支指针向前移动，此时，删除掉分支之后将会丢失分支信息。若要强制禁止<strong>fast forward</strong>,git就会在merge的时候生成一个新的commit,这样即使删除该分支，也可以从log上查看历史信息。</li>
+<li>强制禁止<strong>fast forward</strong> <figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">git merge --no-ff -m <span class="selector-attr">[commit 描述]</span> <span class="selector-attr">[来源分支名]</span></span><br></pre></td></tr></tbody></table></figure>
+<h4 id="修复main分支上的bug流程"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E4%BF%AE%E5%A4%8Dmain%E5%88%86%E6%94%AF%E4%B8%8A%E7%9A%84bug%E6%B5%81%E7%A8%8B" class="headerlink" title="修复main分支上的bug流程"></a>修复main分支上的bug流程</h4></li>
+</ul>
+<ol>
+<li>当前在dev分支，先保存工作现场<figure class="highlight ebnf"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line"><span class="attribute">git stash</span></span><br></pre></td></tr></tbody></table></figure></li>
+<li>切换到main分支，并建立新的分支bugfix</li>
+<li>在新的分支上修改bug,然后提交后合并到main   产生一个commit id fixbug</li>
+<li>回到dev分支，回复现场<figure class="highlight awk"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">git stash pop  <span class="regexp">//</span>这将删除这条stash</span><br><span class="line">或者</span><br><span class="line">git stash list <span class="regexp">//</span>查看stash list</span><br><span class="line">git stash apply stash@{<span class="number">0</span>}</span><br></pre></td></tr></tbody></table></figure></li>
+<li>将修复的信息复制到当前dev分支<figure class="highlight apache"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line"><span class="attribute">git</span> cherry-pick<span class="meta"> [commit id]</span></span><br></pre></td></tr></tbody></table></figure></li>
+</ol>
+<h4 id="多人合作冲突"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%A4%9A%E4%BA%BA%E5%90%88%E4%BD%9C%E5%86%B2%E7%AA%81" class="headerlink" title="多人合作冲突"></a>多人合作冲突</h4><ol>
+<li>pull 下来之后手动解决冲突在再合并push</li>
+</ol>
+<h2 id="标签"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%A0%87%E7%AD%BE" class="headerlink" title="标签"></a>标签</h2><h4 id="创建标签"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%88%9B%E5%BB%BA%E6%A0%87%E7%AD%BE" class="headerlink" title="创建标签"></a>创建标签</h4><ol>
+<li>切换到要创建标签的分支上<figure class="highlight crmsh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">git <span class="keyword">tag</span> <span class="title">[标签名]</span></span><br></pre></td></tr></tbody></table></figure>
+默认标签打在最新的commit上面</li>
+<li>对历史commit打标签<figure class="highlight applescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">git <span class="built_in">log</span> <span class="comment">--pretty=oneline --abbrev-commit  //列出历史commit</span></span><br><span class="line">git tag [tag] [commit <span class="built_in">id</span>]</span><br></pre></td></tr></tbody></table></figure></li>
+<li>指定标签信息<figure class="highlight crmsh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">git <span class="keyword">tag</span> <span class="title">-a</span> [<span class="keyword">tag</span>] -m [<span class="literal">inf</span>o] [commit id]</span><br></pre></td></tr></tbody></table></figure></li>
+</ol>
+<p><strong>标签总是和对应的commit挂钩</strong></p>
+<h4 id="删除标签"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%88%A0%E9%99%A4%E6%A0%87%E7%AD%BE" class="headerlink" title="删除标签"></a>删除标签</h4><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">git tag -d [tag]</span><br></pre></td></tr></tbody></table></figure>
+<h4 id=""><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#" class="headerlink" title=""></a></h4><p>标签只存储到本地，不会自动推送到远程，可以这样推送到远程</p>
+<figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">git push [库名] [tag]</span><br><span class="line">git push [库名] --tags  <span class="comment">//一次性推送所有标签</span></span><br></pre></td></tr></tbody></table></figure>
+<h4 id="删除远程标签"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%88%A0%E9%99%A4%E8%BF%9C%E7%A8%8B%E6%A0%87%E7%AD%BE" class="headerlink" title="删除远程标签"></a>删除远程标签</h4><figure class="highlight c++"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">git push [库名] :ref/tags/[tag]</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="git报错"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#git%E6%8A%A5%E9%94%99" class="headerlink" title="git报错"></a>git报错</h2><h4 id="refusing-to-merge-unrelated-histories"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#refusing-to-merge-unrelated-histories" class="headerlink" title="refusing to merge unrelated histories"></a>refusing to merge unrelated histories</h4><h4 id="描述"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%8F%8F%E8%BF%B0" class="headerlink" title="描述"></a>描述</h4><ul>
+<li>首先再github上创建一个仓库</li>
+<li>在本地初始化一个仓库。</li>
+<li>添加远程仓库</li>
+<li>git push -u ge main</li>
+<li>报错为<blockquote>
+<p>$ git push -u ge main<br>To github.com:yishuilingbo/XYY-Game-Engine.git<br>! [rejected]        main -&gt; main (non-fast-forward)<br>error: failed to push some refs to ‘github.com:yishuilingbo/XYY-Game-Engine.git’<br>hint: Updates were rejected because the tip of your current branch is behind<br>hint: its remote counterpart. Integrate the remote changes (e.g.<br>hint: ‘git pull …’) before pushing again.</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="原因"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%8E%9F%E5%9B%A0" class="headerlink" title="原因"></a>原因</h4><ul>
+<li>本地仓库和远程仓库实际上是独立的两个仓库。假如之前是直接clone的方式在本地建立起远程github仓库的克隆本地仓库就不会有这问题了。<h4 id="解决"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E8%A7%A3%E5%86%B3" class="headerlink" title="解决"></a>解决</h4><figure class="highlight scss"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line"><span class="variable">$git</span> pull <span class="selector-attr">[库名]</span> <span class="selector-attr">[分支名]</span> --allow-unrelated-histories</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+<h4 id="接着解决冲突然后-push即可"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%8E%A5%E7%9D%80%E8%A7%A3%E5%86%B3%E5%86%B2%E7%AA%81%E7%84%B6%E5%90%8E-push%E5%8D%B3%E5%8F%AF" class="headerlink" title="接着解决冲突然后 push即可"></a>接着解决冲突然后 push即可</h4></li>
+</ul>
+<h2 id="多仓库-multiple-ssh-keys-on-one-computer"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%A4%9A%E4%BB%93%E5%BA%93-multiple-ssh-keys-on-one-computer" class="headerlink" title="多仓库 multiple ssh keys on one computer"></a>多仓库 multiple ssh keys on one computer</h2><h4 id="步骤"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E6%AD%A5%E9%AA%A4" class="headerlink" title="步骤"></a>步骤</h4><ol>
+<li>生成ssh key ,并给生成的文件使用绝对路径特定地命名。</li>
+<li>在 .ssh 目录下新建config文件，内容为<figure class="highlight crmsh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line"><span class="comment">#gittest</span></span><br><span class="line">Host gittest.github.com</span><br><span class="line">	HostName github.com</span><br><span class="line">	<span class="keyword">User</span> <span class="title">git</span></span><br><span class="line">	IdentityFile ~/.ssh/id_rsa_gittest</span><br><span class="line">	IdentitiesOnly yes</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#coebase</span></span><br><span class="line">Host codebase.github.com</span><br><span class="line">	HostName github.com</span><br><span class="line">	<span class="keyword">User</span> <span class="title">git</span></span><br><span class="line">	IdentityFile ~/.ssh/id_rsa_codebase</span><br><span class="line">	IdentitiesOnly yes</span><br><span class="line"></span><br><span class="line"><span class="comment">#coebases</span></span><br><span class="line">Host blog.github.com</span><br><span class="line">	HostName github.com</span><br><span class="line">	<span class="keyword">User</span> <span class="title">git</span></span><br><span class="line">	IdentityFile ~/.ssh/id_rsa_codebase</span><br><span class="line">	IdentitiesOnly yes</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure></li>
+<li>修改本地仓库地config中的url<br>eg:<br>gittest地config本来为<figure class="highlight elixir"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">[remote <span class="string">"origin"</span>]</span><br><span class="line">	url = git<span class="variable">@github</span>.<span class="symbol">com:</span>yishuilingbo/gittest.git</span><br><span class="line">	fetch = +refs/heads/*<span class="symbol">:refs/remotes/origin/*</span></span><br></pre></td></tr></tbody></table></figure>
+修改为：<figure class="highlight elixir"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><button class="btn-copy" data-clipboard-snippet=""><i class="ri-file-copy-2-line"></i><span>COPY</span></button><pre><span class="line">[remote <span class="string">"origin"</span>]</span><br><span class="line">	url = git<span class="variable">@gittest</span>.<span class="symbol">github.com:</span>yishuilingbo/gittest.git</span><br><span class="line">	fetch = +refs/heads/*<span class="symbol">:refs/remotes/origin/*</span></span><br></pre></td></tr></tbody></table></figure>
+即添加上gittest.</li>
+<li>在GitHub上的仓库中添加刚刚生成的deploy key</li>
+</ol>
+<h4 id="原理"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%8E%9F%E7%90%86" class="headerlink" title="原理"></a>原理</h4><ul>
+<li>即对于不同的仓库使用不同的key,并且使用别名来区分不同的仓库。<h4 id="参考"><a href="https://myblog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/#%E5%8F%82%E8%80%83" class="headerlink" title="参考"></a>参考</h4></li>
+<li><a target="_blank" rel="noopener" href="https://gist.github.com/jexchan/2351996">https://gist.github.com/jexchan/2351996</a></li>
+</ul>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=http://blog.cuimouren.cn/2021/03/23/git%E7%9A%84%E4%BD%BF%E7%94%A8/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="https://myblog.cuimouren.cn/tags/git/" rel="tag">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="https://myblog.cuimouren.cn/tags/%E4%BD%BF%E7%94%A8/" rel="tag">使用</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="https://myblog.cuimouren.cn/2021/04/16/build-a-mail-server-for-myself/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            build a mail server for myself
+          
+        </div>
+      </a>
+    
+    
+      <a href="https://myblog.cuimouren.cn/2021/03/22/markdown%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">markdown的使用方法</div>
+      </a>
+    
+  </nav>
+
+  
+   
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights ©
+        2021
+        <i class="ri-heart-fill heart_icon"></i> 崔文耀
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动
+        <span class="division">|</span>
+        主题 - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv">199</span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv">769</span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+        <li>
+          <a href="https://beian.miit.gov.cn/" target="_black" rel="nofollow">豫ICP备20002729号</a>
+        </li>
+        
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src="./这里是文耀的space_files/z_stat.php"></script><script src="./这里是文耀的space_files/core.php" charset="utf-8" type="text/javascript"></script><a href="https://www.cnzz.com/stat/website.php?web_id=1278069914" target="_blank" title="站长统计">站长统计</a>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop" style="display: block; opacity: 0.6;">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="https://myblog.cuimouren.cn/"><img src="./这里是文耀的space_files/ayer-side.svg" alt="这里是文耀的space"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://myblog.cuimouren.cn/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://myblog.cuimouren.cn/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://myblog.cuimouren.cn/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://myblog.cuimouren.cn/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://myblog.cuimouren.cn/photos">photos</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://myblog.cuimouren.cn/friends">友链</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="https://myblog.cuimouren.cn/about">关于我</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search" title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="https://myblog.cuimouren.cn/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="./这里是文耀的space_files/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="./这里是文耀的space_files/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="./这里是文耀的space_files/jquery-2.0.3.min.js.下载"></script>
+ 
+<script src="./这里是文耀的space_files/lazyload.min.js.下载"></script>
+
+<!-- Tocbot -->
+ 
+<script src="https://myblog.cuimouren.cn/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="./这里是文耀的space_files/jquery.modal.min.js.下载"></script>
+<link rel="stylesheet" href="./这里是文耀的space_files/jquery.modal.min.css">
+<script src="./这里是文耀的space_files/jquery.justifiedGallery.min.js.下载"></script>
+
+<script src="./这里是文耀的space_files/main.js.下载"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="./这里是文耀的space_files/photoswipe.min.css">
+<link rel="stylesheet" href="./这里是文耀的space_files/default-skin.min.css">
+<script src="./这里是文耀的space_files/photoswipe.min.js.下载"></script>
+<script src="./这里是文耀的space_files/photoswipe-ui-default.min.js.下载"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+ <script type="text/x-mathjax-config;executed=true">
+  MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+  });
+
+  MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+
+<script src="./这里是文耀的space_files/MathJax.js.下载"></script>
+<script>
+  var ayerConfig = {
+    mathjax: true,
+  };
+</script>
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="./这里是文耀的space_files/busuanzi-2.3.pure.min.js.下载"></script>
+ 
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="./这里是文耀的space_files/clipboard.css">
+ <script src="./这里是文耀的space_files/clipboard.min.js.下载"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+  </div>
+
+
+</body></html>
