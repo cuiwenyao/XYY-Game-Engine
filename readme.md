@@ -35,15 +35,16 @@ premake之后，会在根目录生成一个build文件夹并在其中生成XYY_G
 
 添加源文件  示例：
 
-```
+```c++
 #include <iostream>
 #include <string>
 #include <Scene/Scene.h>
-
 int main()
 {
-	XYY_Scene * myscene = new XYY_Scene();
-	myscene->sc->loadXML("Scxmlexample/coordinate.xml");
+	XYY_Window* mywin = new XYY_Window(800, 600, false);
+	XYY_SceneContent* mysc = new XYY_SceneContent();
+	XYY_Scene* myscene = new XYY_Scene(mywin, mysc);
+	myscene->sc->loadXML("include/Scxmlexample/starskybox.xml");
 	myscene->run();
 	return 0;
 }
